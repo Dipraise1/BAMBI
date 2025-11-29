@@ -47,7 +47,7 @@ const Tokenomics = () => {
               lineHeight: '1.6',
               marginBottom: '16px'
             }}>
-              <span style={{ fontWeight: 'bold', color: '#2ee871' }}>16%</span> of token supply locked for <span style={{ fontWeight: 'bold', color: '#2ee871' }}>1 year</span>
+              <span style={{ fontWeight: 'bold', color: '#2ee871' }}>16%</span> of Token Supply Locked for <span style={{ fontWeight: 'bold', color: '#2ee871' }}>1 Year</span>!
             </div>
             <div style={{ 
               fontSize: 'clamp(14px, 2vw, 18px)', 
