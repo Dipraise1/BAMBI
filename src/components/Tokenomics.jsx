@@ -39,7 +39,7 @@ const Tokenomics = () => {
               color: '#fff',
               textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
             }}>
-              🔒 Token Lock
+              🔒 TOKEN LOCK
             </div>
             <div style={{ 
               fontSize: 'clamp(18px, 3vw, 24px)', 
