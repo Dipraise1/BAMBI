@@ -21,9 +21,10 @@ const Tokenomics = () => {
           style={{ 
             fontSize: '32px', 
             marginBottom: '14px',
-            color: '#000',
+            color: '#fff',
             textAlign: 'center',
-            lineHeight: '1.2'
+            lineHeight: '1.2',
+            textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
           }}
         >
           TOKENOMICS
@@ -34,9 +35,10 @@ const Tokenomics = () => {
           style={{ 
             fontSize: '14px', 
             marginBottom: '36px',
-            color: '#000',
+            color: '#fff',
             textAlign: 'center',
-            lineHeight: '1.5'
+            lineHeight: '1.5',
+            textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
           }}
         >
           Built for the community, by the community
@@ -45,43 +47,113 @@ const Tokenomics = () => {
         {/* Simple grid - inconsistent spacing */}
         <div className="grid grid-cols-2 gap-4" style={{ marginBottom: '44px' }}>
           <div style={{ padding: '16px', background: '#fff', borderRadius: '8px', border: '2px solid #000' }}>
-            <div style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '6px', color: '#000' }}>
+            <div style={{ 
+              fontSize: '18px', 
+              fontWeight: 'bold', 
+              marginBottom: '6px', 
+              color: '#fff',
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+            }}>
               Total Supply
             </div>
             <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#2ee871', marginBottom: '4px' }}>
               1,000,000,000
             </div>
-            <div style={{ fontSize: '12px', color: '#333' }}>BAMBI tokens</div>
+            <div style={{ 
+              fontSize: '12px', 
+              color: '#fff',
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+            }}>BAMBI tokens</div>
           </div>
 
           <div style={{ padding: '16px', background: '#fff', borderRadius: '12px', border: '2px solid #000' }}>
-            <div style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '6px', color: '#000' }}>
+            <div style={{ 
+              fontSize: '18px', 
+              fontWeight: 'bold', 
+              marginBottom: '6px', 
+              color: '#fff',
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+            }}>
               Rescue Fund
             </div>
             <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#2ee871', marginBottom: '4px' }}>
               5%
             </div>
-            <div style={{ fontSize: '12px', color: '#333' }}>Auto-donated</div>
+            <div style={{ 
+              fontSize: '12px', 
+              color: '#fff',
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+            }}>Auto-donated</div>
           </div>
 
           <div style={{ padding: '16px', background: '#fff', borderRadius: '4px', border: '2px solid #000' }}>
-            <div style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '6px', color: '#000' }}>
+            <div style={{ 
+              fontSize: '18px', 
+              fontWeight: 'bold', 
+              marginBottom: '6px', 
+              color: '#fff',
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+            }}>
               Community
             </div>
             <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#2ee871', marginBottom: '4px' }}>
               90%
             </div>
-            <div style={{ fontSize: '12px', color: '#333' }}>Fair launch</div>
+            <div style={{ 
+              fontSize: '12px', 
+              color: '#fff',
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+            }}>Fair launch</div>
           </div>
 
           <div style={{ padding: '16px', background: '#fff', borderRadius: '8px', border: '2px solid #000' }}>
-            <div style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '6px', color: '#000' }}>
+            <div style={{ 
+              fontSize: '18px', 
+              fontWeight: 'bold', 
+              marginBottom: '6px', 
+              color: '#fff',
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+            }}>
               Liquidity
             </div>
             <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#2ee871', marginBottom: '4px' }}>
               5%
             </div>
-            <div style={{ fontSize: '12px', color: '#333' }}>Locked</div>
+            <div style={{ 
+              fontSize: '12px', 
+              color: '#fff',
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+            }}>Locked</div>
+          </div>
+        </div>
+
+        {/* Locked Supply Notice */}
+        <div 
+          style={{ 
+            padding: '18px', 
+            background: '#fff', 
+            borderRadius: '8px', 
+            border: '2px solid #000',
+            marginBottom: '32px',
+            textAlign: 'center'
+          }}
+        >
+          <div style={{ 
+            fontSize: '16px', 
+            fontWeight: 'bold', 
+            marginBottom: '6px', 
+            color: '#fff',
+            textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+          }}>
+            🔒 Token Lock
+          </div>
+          <div style={{ 
+            fontSize: '14px', 
+            color: '#fff',
+            lineHeight: '1.5',
+            textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+          }}>
+            <span style={{ fontWeight: 'bold', color: '#2ee871' }}>16%</span> of token supply locked for <span style={{ fontWeight: 'bold', color: '#2ee871' }}>1 year</span>
           </div>
         </div>
 
@@ -96,13 +168,23 @@ const Tokenomics = () => {
             textAlign: 'center'
           }}
         >
-          <div style={{ fontSize: '14px', fontWeight: 'bold', marginBottom: '8px', color: '#000' }}>
+          <div style={{ 
+            fontSize: '14px', 
+            fontWeight: 'bold', 
+            marginBottom: '8px', 
+            color: '#fff',
+            textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+          }}>
             Rescue Shelter Donations
           </div>
           <div style={{ fontSize: '32px', fontWeight: 'bold', color: '#ff6b9d', marginBottom: '6px' }}>
             ${donationAmount.toLocaleString()}
           </div>
-          <div style={{ fontSize: '12px', color: '#333' }}>
+          <div style={{ 
+            fontSize: '12px', 
+            color: '#fff',
+            textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+          }}>
             Raised for rescue organizations
           </div>
         </div>
@@ -114,39 +196,78 @@ const Tokenomics = () => {
             style={{ 
               fontSize: '24px', 
               marginBottom: '20px',
-              color: '#000',
-              fontWeight: 700
+              color: '#fff',
+              fontWeight: 700,
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
             }}
           >
             Community Testimonials
           </h3>
           
           <div style={{ marginBottom: '20px' }}>
-            <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#000', marginBottom: '6px', fontStyle: 'italic' }}>
+            <p style={{ 
+              fontSize: '14px', 
+              lineHeight: '1.6', 
+              color: '#fff', 
+              marginBottom: '6px', 
+              fontStyle: 'italic',
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+            }}>
               "BAMBI is more than a memecoin - it's a movement that's actually making a difference!"
             </p>
-            <div style={{ fontSize: '12px', color: '#333', fontWeight: 'bold' }}>Sarah M. - Rescue Volunteer</div>
+            <div style={{ 
+              fontSize: '12px', 
+              color: '#fff', 
+              fontWeight: 'bold',
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+            }}>Sarah M. - Rescue Volunteer</div>
           </div>
 
           <div style={{ marginBottom: '20px' }}>
-            <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#000', marginBottom: '6px', fontStyle: 'italic' }}>
+            <p style={{ 
+              fontSize: '14px', 
+              lineHeight: '1.6', 
+              color: '#fff', 
+              marginBottom: '6px', 
+              fontStyle: 'italic',
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+            }}>
               "Best community I've ever been part of. The cause makes it even better!"
             </p>
-            <div style={{ fontSize: '12px', color: '#333', fontWeight: 'bold' }}>Mike T. - Early Adopter</div>
+            <div style={{ 
+              fontSize: '12px', 
+              color: '#fff', 
+              fontWeight: 'bold',
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+            }}>Mike T. - Early Adopter</div>
           </div>
 
           <div>
-            <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#000', marginBottom: '6px', fontStyle: 'italic' }}>
+            <p style={{ 
+              fontSize: '14px', 
+              lineHeight: '1.6', 
+              color: '#fff', 
+              marginBottom: '6px', 
+              fontStyle: 'italic',
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+            }}>
               "Finally, a crypto project with heart. Bambi's story touched my soul!"
             </p>
-            <div style={{ fontSize: '12px', color: '#333', fontWeight: 'bold' }}>Emma L. - Dog Lover</div>
+            <div style={{ 
+              fontSize: '12px', 
+              color: '#fff', 
+              fontWeight: 'bold',
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+            }}>Emma L. - Dog Lover</div>
           </div>
         </div>
 
         {/* CTA */}
         <div style={{ marginTop: '36px', textAlign: 'center' }}>
           <a
-            href="#"
+            href="https://t.me/PumpBambi"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover-lift"
             style={{
               display: 'inline-block',
@@ -159,7 +280,8 @@ const Tokenomics = () => {
               fontWeight: 'bold',
               height: '42px',
               lineHeight: '22px',
-              border: '2px solid #000'
+              border: '2px solid #000',
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
             }}
           >
             Join the Pack

@@ -20,9 +20,10 @@ const RescueStory = () => {
             <h2 
               className="font-scrappy font-bold-mix text-3xl md:text-4xl lg:text-5xl mb-4 md:mb-6"
               style={{ 
-                color: '#2ee871',
+                color: '#fff',
                 lineHeight: '1.2',
-                transform: 'translateX(-2px)'
+                transform: 'translateX(-2px)',
+                textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
               }}
             >
               THE RESCUE STORY
@@ -31,8 +32,9 @@ const RescueStory = () => {
             <p 
               className="font-mono text-base md:text-lg lg:text-xl mb-6 md:mb-8"
               style={{ 
-                color: '#333',
-                lineHeight: '1.6'
+                color: '#fff',
+                lineHeight: '1.6',
+                textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
               }}
             >
               From abandoned on the streets to becoming the face of a movement
@@ -48,8 +50,9 @@ const RescueStory = () => {
             <p 
               className="font-mono text-base md:text-lg lg:text-xl leading-relaxed"
               style={{ 
-                color: '#333',
-                marginBottom: '24px'
+                color: '#fff',
+                marginBottom: '24px',
+                textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
               }}
             >
               Bambi had been a stray dog since forever and was rescued from a shelter that was going to put her down. Shes had part of her ear bitten off, her tail cut off, her teeth missing, barely had food her bones were showing. Than she was rescued from the shelter and I took her in. The rest is history, she is much happier where she is at now. She went from being extremely sad and depressed to fulfilled and loved.
@@ -68,16 +71,16 @@ const RescueStory = () => {
             <img
               src="/IMAGE 2025-11-29 11:05:00.jpg"
               alt="Bambi Today"
-              className="w-full h-auto object-contain"
-              style={{ maxHeight: '400px' }}
+              className="w-full h-full object-cover"
+              style={{ minHeight: '400px', display: 'block' }}
             />
           </div>
           <div className="rounded-lg overflow-hidden border-2 border-black" style={{ background: '#fff' }}>
             <img
               src="/IMAGE 2025-11-29 11:56:35.jpg"
               alt="Bambi"
-              className="w-full h-auto object-contain"
-              style={{ maxHeight: '400px' }}
+              className="w-full h-full object-cover"
+              style={{ minHeight: '400px', display: 'block' }}
             />
           </div>
         </motion.div>

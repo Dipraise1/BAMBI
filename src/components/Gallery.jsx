@@ -40,10 +40,16 @@ const Gallery = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-12 md:mb-16"
         >
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 md:mb-6 text-impact" style={{ color: '#000' }}>
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 md:mb-6 text-impact" style={{ 
+            color: '#fff',
+            textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+          }}>
             Gallery
           </h2>
-          <p className="text-base md:text-lg lg:text-xl max-w-3xl mx-auto" style={{ color: '#333' }}>
+          <p className="text-base md:text-lg lg:text-xl max-w-3xl mx-auto" style={{ 
+            color: '#fff',
+            textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+          }}>
             See Bambi's journey from rescue to internet stardom
           </p>
         </motion.div>
@@ -117,15 +123,27 @@ const Gallery = () => {
         >
           <div className="bg-white rounded-xl p-6 md:p-8 text-center border-2 border-black shadow-lg">
             <div className="text-5xl md:text-6xl mb-4">🌃</div>
-            <h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: '#000' }}>Before</h3>
-            <p className="text-base md:text-lg" style={{ color: '#333' }}>
+            <h3 className="text-xl md:text-2xl font-bold mb-2" style={{ 
+              color: '#fff',
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+            }}>Before</h3>
+            <p className="text-base md:text-lg" style={{ 
+              color: '#fff',
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+            }}>
               Abandoned on the streets, alone and scared
             </p>
           </div>
           <div className="bg-[#ff6b9d] rounded-xl p-6 md:p-8 text-center text-white border-2 border-black shadow-lg">
             <div className="text-5xl md:text-6xl mb-4">✨</div>
-            <h3 className="text-xl md:text-2xl font-bold mb-2">After</h3>
-            <p className="text-base md:text-lg text-white/95">
+            <h3 className="text-xl md:text-2xl font-bold mb-2" style={{ 
+              color: '#fff',
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+            }}>After</h3>
+            <p className="text-base md:text-lg" style={{ 
+              color: '#fff',
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+            }}>
               Loved, celebrated, and inspiring a movement
             </p>
           </div>

@@ -52,7 +52,10 @@ const Footer = () => {
       <div className="container mx-auto relative z-10">
         {/* Social Links */}
         <div ref={ref} className="text-center mb-12">
-          <h4 className="text-lg md:text-xl font-bold mb-6 text-black">Join the Pack</h4>
+          <h4 className="text-lg md:text-xl font-bold mb-6" style={{ 
+            color: '#fff',
+            textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+          }}>Join the Pack</h4>
           <div className="flex justify-center flex-wrap gap-4 md:gap-6 items-center">
             {regularLinks.map((social, index) => (
               <motion.a

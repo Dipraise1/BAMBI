@@ -27,28 +27,6 @@ const Hero = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            {/* CA badge - small corner sticker */}
-            <div 
-              className="bg-white border-2 border-black hidden md:flex animate-bounceIn"
-              style={{ 
-                position: 'absolute', 
-                top: '-8px', 
-                right: '-8px', 
-                width: '70px', 
-                height: '70px', 
-                borderRadius: '4px',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '18px',
-                fontWeight: 'bold',
-                color: '#2ee871',
-                transform: 'rotate(5deg)',
-                animationDelay: '0.6s',
-                animationFillMode: 'both'
-              }}
-            >
-              CA
-            </div>
           </div>
 
           {/* Right - Text, slightly different alignment */}
@@ -58,8 +36,9 @@ const Hero = () => {
               style={{ 
                 lineHeight: '1.1', 
                 marginBottom: '14px',
-                color: '#000',
-                fontWeight: 700
+                color: '#fff',
+                fontWeight: 700,
+                textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
               }}
             >
               BAMBI
@@ -70,10 +49,11 @@ const Hero = () => {
               style={{ 
                 lineHeight: '1.4', 
                 marginBottom: '22px',
-                color: '#000',
+                color: '#fff',
                 fontWeight: 400,
                 animationDelay: '0.2s',
-                animationFillMode: 'both'
+                animationFillMode: 'both',
+                textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
               }}
             >
               Born A Memecoin to Break the Internet
@@ -81,18 +61,26 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-3 mb-5 animate-fadeInUp" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
               <a
-                href="https://t.me/qQW2AEZR"
+                href="https://t.me/PumpBambi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover-lift inline-block bg-[#ff6b9d] text-white px-6 py-3 md:px-8 md:py-3 lg:px-10 lg:py-4 rounded-lg text-sm md:text-base lg:text-lg font-bold border-2 border-black shadow-lg transition-all duration-200 hover:shadow-xl"
-                style={{ textDecoration: 'none' }}
+                className="hover-lift inline-block bg-[#D2B48C] px-6 py-3 md:px-8 md:py-3 lg:px-10 lg:py-4 rounded-lg text-sm md:text-base lg:text-lg font-bold border-2 border-black shadow-lg transition-all duration-200 hover:shadow-xl"
+                style={{ 
+                  textDecoration: 'none',
+                  color: '#fff',
+                  textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+                }}
               >
                 Join the Pack
               </a>
               <a
                 href="#story"
-                className="hover-lift inline-block bg-black text-white px-6 py-3 md:px-8 md:py-3 lg:px-10 lg:py-4 rounded-lg text-sm md:text-base lg:text-lg font-bold border-2 border-black shadow-lg transition-all duration-200 hover:shadow-xl hover:bg-gray-800"
-                style={{ textDecoration: 'none' }}
+                className="hover-lift inline-block bg-black px-6 py-3 md:px-8 md:py-3 lg:px-10 lg:py-4 rounded-lg text-sm md:text-base lg:text-lg font-bold border-2 border-black shadow-lg transition-all duration-200 hover:shadow-xl hover:bg-gray-800"
+                style={{ 
+                  textDecoration: 'none',
+                  color: '#fff',
+                  textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+                }}
               >
                 Read Our Story
               </a>
@@ -112,7 +100,10 @@ const Hero = () => {
               title="Click to copy"
             >
               <div className="flex items-center gap-2">
-                <span style={{ color: '#000' }}>
+                <span style={{ 
+                  color: '#fff',
+                  textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+                }}>
                   CA: {contractAddress}
                 </span>
                 <svg 

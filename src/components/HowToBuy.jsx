@@ -12,7 +12,10 @@ const HowToBuy = () => {
         <motion.h2 
           ref={ref}
           className="text-4xl md:text-5xl lg:text-6xl font-black text-center mb-12 md:mb-16"
-          style={{ color: '#000' }}
+          style={{ 
+            color: '#fff',
+            textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+          }}
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -37,10 +40,16 @@ const HowToBuy = () => {
               </svg>
             </div>
             <div className="flex-1">
-              <h3 className="text-2xl md:text-3xl font-bold mb-3" style={{ color: '#000' }}>
+              <h3 className="text-2xl md:text-3xl font-bold mb-3" style={{ 
+                color: '#fff',
+                textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+              }}>
                 CREATE A WALLET
               </h3>
-              <p className="text-base md:text-lg leading-relaxed" style={{ color: '#333' }}>
+              <p className="text-base md:text-lg leading-relaxed" style={{ 
+                color: '#fff',
+                textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+              }}>
                 Download Phantom (or your preferred wallet) for free from the App Store or Google Play. 
                 If you're on desktop, install the Phantom Chrome extension directly from the Chrome Web Store.
               </p>
@@ -63,10 +72,16 @@ const HowToBuy = () => {
               </svg>
             </div>
             <div className="flex-1">
-              <h3 className="text-2xl md:text-3xl font-bold mb-3" style={{ color: '#000' }}>
+              <h3 className="text-2xl md:text-3xl font-bold mb-3" style={{ 
+                color: '#fff',
+                textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+              }}>
                 GET SOME SOLANA
               </h3>
-              <p className="text-base md:text-lg leading-relaxed" style={{ color: '#333' }}>
+              <p className="text-base md:text-lg leading-relaxed" style={{ 
+                color: '#fff',
+                textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+              }}>
                 Make sure your wallet has SOL to swap into $BAMBI. If you don't have any yet, you can: 
                 Purchase SOL directly in your wallet, Transfer from another wallet, or Buy on an exchange 
                 and send it straight to your wallet.
@@ -83,14 +98,23 @@ const HowToBuy = () => {
           >
             <div className="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 bg-white rounded-full flex items-center justify-center border-2 border-black shadow-lg">
               <div className="w-16 h-16 md:w-20 md:h-20 rounded-full border-4 border-black flex items-center justify-center" style={{ background: '#2ee871' }}>
-                <span className="text-2xl md:text-3xl font-black" style={{ color: '#000' }}>B</span>
+                <span className="text-2xl md:text-3xl font-black" style={{ 
+                  color: '#fff',
+                  textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+                }}>B</span>
               </div>
             </div>
             <div className="flex-1">
-              <h3 className="text-2xl md:text-3xl font-bold mb-3" style={{ color: '#000' }}>
+              <h3 className="text-2xl md:text-3xl font-bold mb-3" style={{ 
+                color: '#fff',
+                textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+              }}>
                 SWITCH SOLANA FOR $BAMBI
               </h3>
-              <p className="text-base md:text-lg leading-relaxed" style={{ color: '#333' }}>
+              <p className="text-base md:text-lg leading-relaxed" style={{ 
+                color: '#fff',
+                textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+              }}>
                 Exchange your SOL for $BAMBI and join the pack!
               </p>
             </div>
