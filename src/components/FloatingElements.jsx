@@ -5,10 +5,10 @@ const FloatingElements = () => {
   const [elements, setElements] = useState([])
 
   useEffect(() => {
-    const emojis = ['🐾', '❤️', '⭐', '✨', '💚']
+    const emojis = ['🐾', '❤️', '⭐', '✨']
     const newElements = []
 
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < 5; i++) {
       newElements.push({
         id: i,
         emoji: emojis[Math.floor(Math.random() * emojis.length)],
@@ -16,7 +16,7 @@ const FloatingElements = () => {
         y: Math.random() * 100,
         duration: 3 + Math.random() * 4,
         delay: Math.random() * 2,
-        size: 20 + Math.random() * 30,
+        size: 15 + Math.random() * 20,
       })
     }
 
@@ -38,7 +38,7 @@ const FloatingElements = () => {
             y: [0, -30, 0],
             x: [0, Math.random() * 20 - 10, 0],
             rotate: [0, 10, -10, 0],
-            opacity: [0.3, 0.7, 0.3],
+            opacity: [0.15, 0.4, 0.15],
           }}
           transition={{
             duration: element.duration,

@@ -75,7 +75,7 @@ const Roadmap = () => {
   }
 
   return (
-    <section id="roadmap" className="py-12 md:py-16 lg:py-20 px-4 relative overflow-hidden" style={{ background: '#00ff00' }}>
+    <section id="roadmap" className="py-12 md:py-16 lg:py-20 px-4 relative overflow-hidden" style={{ background: '#2ee871' }}>
       <div className="max-w-[1200px] mx-auto relative z-10">
         <motion.div
           ref={ref}
@@ -131,7 +131,7 @@ const Roadmap = () => {
                     <ul className="space-y-2">
                       {milestone.tasks.map((task, taskIndex) => (
                         <li key={taskIndex} className="flex items-center gap-2 text-base md:text-lg" style={{ color: '#333' }}>
-                          <span className="text-[#00ff00] font-bold text-lg">✓</span>
+                          <span className="text-[#2ee871] font-bold text-lg">✓</span>
                           <span>{task}</span>
                         </li>
                       ))}

@@ -2,8 +2,7 @@ import React, { useEffect } from 'react'
 import Hero from './components/Hero'
 import VideoSection from './components/VideoSection'
 import RescueStory from './components/RescueStory'
-import Gallery from './components/Gallery'
-import Roadmap from './components/Roadmap'
+import HowToBuy from './components/HowToBuy'
 import Footer from './components/Footer'
 import FloatingElements from './components/FloatingElements'
 import PawTrail from './components/PawTrail'
@@ -17,7 +16,7 @@ function App() {
   }, [])
 
   return (
-    <div className="min-h-screen" style={{ background: '#00ff00' }}>
+    <div className="min-h-screen" style={{ background: '#2ee871' }}>
       <BorderBambi />
       <PawTrail />
       <FloatingElements />
@@ -28,9 +27,7 @@ function App() {
       <SectionDivider />
       <RescueStory />
       <SectionDivider />
-      <Gallery />
-      <SectionDivider />
-      <Roadmap />
+      <HowToBuy />
       <SectionDivider />
       <Footer />
     </div>

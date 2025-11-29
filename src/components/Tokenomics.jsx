@@ -13,7 +13,7 @@ const Tokenomics = () => {
   }, [])
 
   return (
-    <section id="tokenomics" style={{ paddingTop: '48px', paddingBottom: '52px', background: '#00ff00' }}>
+    <section id="tokenomics" style={{ paddingTop: '48px', paddingBottom: '52px', background: '#2ee871' }}>
       <div className="max-w-[920px] mx-auto px-4" style={{ paddingLeft: '1.2rem', paddingRight: '1.2rem' }}>
         {/* Heading - centered this time */}
         <h2 
@@ -48,7 +48,7 @@ const Tokenomics = () => {
             <div style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '6px', color: '#000' }}>
               Total Supply
             </div>
-            <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#00ff00', marginBottom: '4px' }}>
+            <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#2ee871', marginBottom: '4px' }}>
               1,000,000,000
             </div>
             <div style={{ fontSize: '12px', color: '#333' }}>BAMBI tokens</div>
@@ -58,7 +58,7 @@ const Tokenomics = () => {
             <div style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '6px', color: '#000' }}>
               Rescue Fund
             </div>
-            <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#00ff00', marginBottom: '4px' }}>
+            <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#2ee871', marginBottom: '4px' }}>
               5%
             </div>
             <div style={{ fontSize: '12px', color: '#333' }}>Auto-donated</div>
@@ -68,7 +68,7 @@ const Tokenomics = () => {
             <div style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '6px', color: '#000' }}>
               Community
             </div>
-            <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#00ff00', marginBottom: '4px' }}>
+            <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#2ee871', marginBottom: '4px' }}>
               90%
             </div>
             <div style={{ fontSize: '12px', color: '#333' }}>Fair launch</div>
@@ -78,7 +78,7 @@ const Tokenomics = () => {
             <div style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '6px', color: '#000' }}>
               Liquidity
             </div>
-            <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#00ff00', marginBottom: '4px' }}>
+            <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#2ee871', marginBottom: '4px' }}>
               5%
             </div>
             <div style={{ fontSize: '12px', color: '#333' }}>Locked</div>

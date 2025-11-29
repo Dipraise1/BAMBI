@@ -46,7 +46,15 @@
 }
 
 .hover-color:hover {
-  color: #00ff00;
+  color: #2ee871;
   transition: color 0.2s;
+}
+
+/* Animation utilities */
+.animate-fadeInLeft,
+.animate-fadeInRight,
+.animate-fadeInUp,
+.animate-bounceIn {
+  animation-fill-mode: both;
 }
 

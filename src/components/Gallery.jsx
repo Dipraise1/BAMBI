@@ -31,7 +31,7 @@ const Gallery = () => {
   }
 
   return (
-    <section id="gallery" className="py-12 md:py-16 lg:py-20 px-4 relative overflow-hidden" style={{ background: '#00ff00' }}>
+    <section id="gallery" className="py-12 md:py-16 lg:py-20 px-4 relative overflow-hidden" style={{ background: '#2ee871' }}>
       <div className="max-w-[1200px] mx-auto relative z-10">
         <motion.div
           ref={ref}

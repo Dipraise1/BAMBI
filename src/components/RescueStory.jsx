@@ -1,17 +1,26 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import { motion } from 'framer-motion'
+import { useInView } from 'framer-motion'
 
 // The rescue story - simple paragraphs, no fancy cards
 const RescueStory = () => {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, amount: 0.2 })
+
   return (
-    <section id="story" className="py-12 md:py-16 lg:py-20" style={{ background: '#00ff00' }}>
+    <section id="story" className="py-12 md:py-16 lg:py-20" style={{ background: '#2ee871' }}>
       <div className="max-w-[1200px] mx-auto px-4 md:px-8 lg:px-12">
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-start">
+        <div ref={ref} className="grid md:grid-cols-2 gap-8 lg:gap-12 items-start">
           {/* Left Column - Heading and Intro */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+          >
             <h2 
               className="font-scrappy font-bold-mix text-3xl md:text-4xl lg:text-5xl mb-4 md:mb-6"
               style={{ 
-                color: '#00ff00',
+                color: '#2ee871',
                 lineHeight: '1.2',
                 transform: 'translateX(-2px)'
               }}
@@ -28,10 +37,14 @@ const RescueStory = () => {
             >
               From abandoned on the streets to becoming the face of a movement
             </p>
-          </div>
+          </motion.div>
 
           {/* Right Column - Story content */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
+          >
             <p 
               className="font-mono text-base md:text-lg lg:text-xl leading-relaxed"
               style={{ 
@@ -41,24 +54,33 @@ const RescueStory = () => {
             >
               Bambi had been a stray dog since forever and was rescued from a shelter that was going to put her down. Shes had part of her ear bitten off, her tail cut off, her teeth missing, barely had food her bones were showing. Than she was rescued from the shelter and I took her in. The rest is history, she is much happier where she is at now. She went from being extremely sad and depressed to fulfilled and loved.
             </p>
-          </div>
+          </motion.div>
         </div>
 
-        {/* CTA - Full Width */}
-        <div 
-          className="hover-lift mt-8 md:mt-12 lg:mt-16 p-6 md:p-8 lg:p-10 bg-[#ff6b9d] rounded-lg text-center max-w-3xl mx-auto"
+        {/* Gallery Images */}
+        <motion.div
+          className="mt-8 md:mt-12 lg:mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8"
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
         >
-          <p className="text-base md:text-lg lg:text-xl text-white mb-4 md:mb-6 font-bold">
-            Every transaction helps support rescue organizations
-          </p>
-          <a
-            href="#tokenomics"
-            className="inline-block bg-white text-[#ff6b9d] px-6 py-3 md:px-8 md:py-4 lg:px-10 lg:py-4 rounded-lg text-sm md:text-base lg:text-lg font-bold border-2 border-black"
-            style={{ textDecoration: 'none' }}
-          >
-            Support the Cause
-          </a>
-        </div>
+          <div className="rounded-lg overflow-hidden border-2 border-black" style={{ background: '#fff' }}>
+            <img
+              src="/IMAGE 2025-11-29 11:05:00.jpg"
+              alt="Bambi Today"
+              className="w-full h-auto object-contain"
+              style={{ maxHeight: '400px' }}
+            />
+          </div>
+          <div className="rounded-lg overflow-hidden border-2 border-black" style={{ background: '#fff' }}>
+            <img
+              src="/IMAGE 2025-11-29 11:56:35.jpg"
+              alt="Bambi"
+              className="w-full h-auto object-contain"
+              style={{ maxHeight: '400px' }}
+            />
+          </div>
+        </motion.div>
       </div>
     </section>
   )
