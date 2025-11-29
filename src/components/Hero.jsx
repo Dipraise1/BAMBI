@@ -1,7 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 // Hero section - made it smaller and cozier
 const Hero = () => {
+  const [copied, setCopied] = useState(false)
+  const contractAddress = '4kAFtWjyzrpx6E7TFVhcVKKDEsxc8H3uYtg7dTnXpump'
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(contractAddress)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    } catch (err) {
+      console.error('Failed to copy:', err)
+    }
+  }
   return (
     <section className="relative" style={{ minHeight: '65vh', paddingTop: '52px', paddingBottom: '48px', background: '#2ee871' }}>
       <div className="max-w-[1200px] mx-auto px-4" style={{ paddingLeft: '1.2rem', paddingRight: '1.2rem' }}>
@@ -86,28 +98,47 @@ const Hero = () => {
               </a>
             </div>
 
-            <p 
-              className="font-scrappy text-sm md:text-base lg:text-lg mb-5 animate-fadeInUp"
-              style={{ 
-                color: '#000',
-                fontWeight: 400,
-                animationDelay: '0.5s',
-                animationFillMode: 'both'
-              }}
-            >
-              Adopt Don't Shop
-            </p>
-
             {/* Contract Address */}
             <div 
-              className="font-mono w-full md:w-auto text-xs md:text-sm lg:text-base mb-4 p-3 md:p-4 bg-white rounded-lg border-2 border-black inline-block break-all animate-fadeInUp"
+              className="font-mono w-full md:w-auto text-xs md:text-sm lg:text-base mb-4 p-3 md:p-4 bg-white rounded-lg border-2 border-black inline-block break-all animate-fadeInUp cursor-pointer transition-all duration-200 hover:bg-gray-50 hover:shadow-md"
               style={{ 
-                color: '#000',
                 animationDelay: '0.6s',
                 animationFillMode: 'both'
               }}
+              onClick={handleCopy}
+              title="Click to copy"
             >
-              CA: 4kAFtWjyzrpx6E7TFVhcVKKDEsxc8H3uYtg7dTnXpump
+              <div className="flex items-center gap-2">
+                <span style={{ color: '#000' }}>
+                  CA: {contractAddress}
+                </span>
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="16" 
+                  height="16" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="#000" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round"
+                  className="flex-shrink-0"
+                >
+                  {copied ? (
+                    <path d="M20 6L9 17l-5-5" />
+                  ) : (
+                    <>
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </>
+                  )}
+                </svg>
+              </div>
+              {copied && (
+                <div className="text-xs mt-1 text-[#2ee871] font-bold">
+                  Copied!
+                </div>
+              )}
             </div>
 
             {/* Social Links with Icons */}

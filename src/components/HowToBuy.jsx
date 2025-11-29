@@ -91,8 +91,7 @@ const HowToBuy = () => {
                 SWITCH SOLANA FOR $BAMBI
               </h3>
               <p className="text-base md:text-lg leading-relaxed" style={{ color: '#333' }}>
-                Exchange your SOL for $BAMBI and join the pack! Support rescue organizations while being part 
-                of a community-driven memecoin with heart.
+                Exchange your SOL for $BAMBI and join the pack!
               </p>
             </div>
           </motion.div>
