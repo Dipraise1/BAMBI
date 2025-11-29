@@ -63,21 +63,42 @@ const Hero = () => {
                 href="https://t.me/PumpBambi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover-lift inline-block bg-[#D2B48C] px-6 py-3 md:px-8 md:py-3 lg:px-10 lg:py-4 rounded-lg text-sm md:text-base lg:text-lg font-bold border-2 border-black shadow-lg transition-all duration-200 hover:shadow-xl"
-                style={{ 
-                  textDecoration: 'none',
-                  color: '#fff'
-                }}
-              >
-                Join the Pack
-              </a>
-              <a
-                href="#story"
-                className="hover-lift inline-block bg-black px-6 py-3 md:px-8 md:py-3 lg:px-10 lg:py-4 rounded-lg text-sm md:text-base lg:text-lg font-bold border-2 border-black shadow-lg transition-all duration-200 hover:shadow-xl hover:bg-gray-800"
+                className="hover-lift inline-block px-6 py-3 md:px-8 md:py-3 lg:px-10 lg:py-4 rounded-lg text-sm md:text-base lg:text-lg font-bold border-2 border-black shadow-lg transition-all duration-300"
                 style={{ 
                   textDecoration: 'none',
                   color: '#fff',
-                  textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+                  background: '#87CEEB'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = '#D2B48C'
+                  e.currentTarget.style.transform = 'translateY(-2px)'
+                  e.currentTarget.style.boxShadow = '0 10px 20px rgba(0,0,0,0.3)'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = '#87CEEB'
+                  e.currentTarget.style.transform = 'translateY(0)'
+                  e.currentTarget.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)'
+                }}
+              >
+                Support $BAMBI
+              </a>
+              <a
+                href="#story"
+                className="hover-lift inline-block px-6 py-3 md:px-8 md:py-3 lg:px-10 lg:py-4 rounded-lg text-sm md:text-base lg:text-lg font-bold border-2 border-black shadow-lg transition-all duration-300"
+                style={{ 
+                  textDecoration: 'none',
+                  color: '#fff',
+                  background: '#D2B48C'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = '#87CEEB'
+                  e.currentTarget.style.transform = 'translateY(-2px)'
+                  e.currentTarget.style.boxShadow = '0 10px 20px rgba(0,0,0,0.3)'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = '#D2B48C'
+                  e.currentTarget.style.transform = 'translateY(0)'
+                  e.currentTarget.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)'
                 }}
               >
                 Read Our Story

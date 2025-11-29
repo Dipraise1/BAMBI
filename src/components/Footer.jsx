@@ -54,7 +54,7 @@ const Footer = () => {
         <div ref={ref} className="text-center mb-12">
           <h4 className="text-lg md:text-xl font-bold mb-6" style={{ 
             color: '#fff'
-          }}>Join the Pack</h4>
+          }}>Support $BAMBI</h4>
           <div className="flex justify-center flex-wrap gap-4 md:gap-6 items-center">
             {regularLinks.map((social, index) => (
               <motion.a
