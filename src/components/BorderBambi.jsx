@@ -2,7 +2,7 @@ import React from 'react'
 
 // thinner, less prominent border
 const BorderBambi = () => {
-  const text = 'BAMBI '.repeat(50)
+  const text = 'BAMBI '.repeat(100)
 
   return (
     <>
@@ -10,16 +10,16 @@ const BorderBambi = () => {
       <div 
         className="fixed top-0 left-0 right-0 bg-white text-black overflow-hidden z-[1000] font-mono"
         style={{ 
-          height: '18px', 
-          fontSize: '10px', 
+          height: '28px', 
+          fontSize: '16px', 
           fontWeight: 'bold',
           display: 'flex',
           alignItems: 'center',
           paddingLeft: '8px'
         }}
       >
-        <div style={{ whiteSpace: 'nowrap', animation: 'scroll 15s linear infinite' }}>
-          {text}
+        <div style={{ whiteSpace: 'nowrap', animation: 'scroll 40s linear infinite' }}>
+          {text}{text}
         </div>
       </div>
 
@@ -27,16 +27,16 @@ const BorderBambi = () => {
       <div 
         className="fixed bottom-0 left-0 right-0 bg-white text-black overflow-hidden z-[1000] font-mono"
         style={{ 
-          height: '18px', 
-          fontSize: '10px', 
+          height: '28px', 
+          fontSize: '16px', 
           fontWeight: 'bold',
           display: 'flex',
           alignItems: 'center',
           paddingLeft: '8px'
         }}
       >
-        <div style={{ whiteSpace: 'nowrap', animation: 'scroll-reverse 15s linear infinite' }}>
-          {text}
+        <div style={{ whiteSpace: 'nowrap', animation: 'scroll-reverse 40s linear infinite' }}>
+          {text}{text}
         </div>
       </div>
 

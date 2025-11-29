@@ -15,7 +15,7 @@ const Hero = () => {
     }
   }
   return (
-    <section className="relative overflow-x-hidden" style={{ minHeight: '65vh', paddingTop: '52px', paddingBottom: '48px', background: '#2ee871' }}>
+    <section className="relative overflow-x-hidden" style={{ minHeight: '65vh', paddingTop: '96px', paddingBottom: '48px', background: '#2ee871' }}>
       <div className="max-w-[1200px] mx-auto px-4" style={{ paddingLeft: '1rem', paddingRight: '1rem' }}>
         <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 lg:gap-12" style={{ alignItems: 'flex-start' }}>
           {/* Left - Image, intentionally slightly off */}
@@ -52,8 +52,7 @@ const Hero = () => {
                 color: '#fff',
                 fontWeight: 400,
                 animationDelay: '0.2s',
-                animationFillMode: 'both',
-                textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+                animationFillMode: 'both'
               }}
             >
               Born A Memecoin to Break the Internet
@@ -101,8 +100,7 @@ const Hero = () => {
             >
               <div className="flex items-center gap-2">
                 <span style={{ 
-                  color: '#fff',
-                  textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+                  color: '#000'
                 }}>
                   CA: {contractAddress}
                 </span>

@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import VideoSection from './components/VideoSection'
 import RescueStory from './components/RescueStory'
 import HowToBuy from './components/HowToBuy'
+import Tokenomics from './components/Tokenomics'
 import Footer from './components/Footer'
 import FloatingElements from './components/FloatingElements'
 import PawTrail from './components/PawTrail'
@@ -28,6 +29,8 @@ function App() {
       <RescueStory />
       <SectionDivider />
       <HowToBuy />
+      <SectionDivider />
+      <Tokenomics />
       <SectionDivider />
       <Footer />
     </div>

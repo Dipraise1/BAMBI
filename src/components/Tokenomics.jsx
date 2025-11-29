@@ -1,26 +1,14 @@
-import { useState, useEffect } from 'react'
-
-// Tokenomics - simple layout, no fancy animations
+// Tokenomics - Token Lock section only
 const Tokenomics = () => {
-  const [donationAmount, setDonationAmount] = useState(125000)
-
-  useEffect(() => {
-    // donation counter
-    const interval = setInterval(() => {
-      setDonationAmount(prev => prev + Math.floor(Math.random() * 8))
-    }, 4000)
-    return () => clearInterval(interval)
-  }, [])
-
   return (
-    <section id="tokenomics" style={{ paddingTop: '48px', paddingBottom: '52px', background: '#2ee871' }}>
-      <div className="max-w-[920px] mx-auto px-4" style={{ paddingLeft: '1.2rem', paddingRight: '1.2rem' }}>
-        {/* Heading - centered this time */}
+    <section id="tokenomics" style={{ paddingTop: '96px', paddingBottom: '96px', background: '#2ee871' }}>
+      <div className="max-w-[1400px] mx-auto px-4" style={{ paddingLeft: '2rem', paddingRight: '2rem' }}>
+        {/* Heading */}
         <h2 
           className="font-scrappy font-bold-mix"
           style={{ 
-            fontSize: '32px', 
-            marginBottom: '14px',
+            fontSize: '64px', 
+            marginBottom: '48px',
             color: '#fff',
             textAlign: 'center',
             lineHeight: '1.2',
@@ -29,263 +17,105 @@ const Tokenomics = () => {
         >
           TOKENOMICS
         </h2>
-        
-        <p 
-          className="font-mono"
-          style={{ 
-            fontSize: '14px', 
-            marginBottom: '36px',
-            color: '#fff',
-            textAlign: 'center',
-            lineHeight: '1.5',
-            textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-          }}
-        >
-          Built for the community, by the community
-        </p>
-
-        {/* Simple grid - inconsistent spacing */}
-        <div className="grid grid-cols-2 gap-4" style={{ marginBottom: '44px' }}>
-          <div style={{ padding: '16px', background: '#fff', borderRadius: '8px', border: '2px solid #000' }}>
-            <div style={{ 
-              fontSize: '18px', 
-              fontWeight: 'bold', 
-              marginBottom: '6px', 
-              color: '#fff',
-              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-            }}>
-              Total Supply
-            </div>
-            <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#2ee871', marginBottom: '4px' }}>
-              1,000,000,000
-            </div>
-            <div style={{ 
-              fontSize: '12px', 
-              color: '#fff',
-              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-            }}>BAMBI tokens</div>
-          </div>
-
-          <div style={{ padding: '16px', background: '#fff', borderRadius: '12px', border: '2px solid #000' }}>
-            <div style={{ 
-              fontSize: '18px', 
-              fontWeight: 'bold', 
-              marginBottom: '6px', 
-              color: '#fff',
-              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-            }}>
-              Rescue Fund
-            </div>
-            <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#2ee871', marginBottom: '4px' }}>
-              5%
-            </div>
-            <div style={{ 
-              fontSize: '12px', 
-              color: '#fff',
-              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-            }}>Auto-donated</div>
-          </div>
-
-          <div style={{ padding: '16px', background: '#fff', borderRadius: '4px', border: '2px solid #000' }}>
-            <div style={{ 
-              fontSize: '18px', 
-              fontWeight: 'bold', 
-              marginBottom: '6px', 
-              color: '#fff',
-              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-            }}>
-              Community
-            </div>
-            <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#2ee871', marginBottom: '4px' }}>
-              90%
-            </div>
-            <div style={{ 
-              fontSize: '12px', 
-              color: '#fff',
-              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-            }}>Fair launch</div>
-          </div>
-
-          <div style={{ padding: '16px', background: '#fff', borderRadius: '8px', border: '2px solid #000' }}>
-            <div style={{ 
-              fontSize: '18px', 
-              fontWeight: 'bold', 
-              marginBottom: '6px', 
-              color: '#fff',
-              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-            }}>
-              Liquidity
-            </div>
-            <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#2ee871', marginBottom: '4px' }}>
-              5%
-            </div>
-            <div style={{ 
-              fontSize: '12px', 
-              color: '#fff',
-              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-            }}>Locked</div>
-          </div>
-        </div>
 
         {/* Locked Supply Notice */}
         <div 
           style={{ 
-            padding: '18px', 
+            padding: '48px', 
             background: '#fff', 
-            borderRadius: '8px', 
-            border: '2px solid #000',
-            marginBottom: '32px',
-            textAlign: 'center'
+            borderRadius: '12px', 
+            border: '3px solid #000',
+            marginBottom: '48px',
+            textAlign: 'center',
+            maxWidth: '900px',
+            marginLeft: 'auto',
+            marginRight: 'auto'
           }}
         >
           <div style={{ 
-            fontSize: '16px', 
+            fontSize: '36px', 
             fontWeight: 'bold', 
-            marginBottom: '6px', 
+            marginBottom: '24px', 
             color: '#fff',
             textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
           }}>
             🔒 Token Lock
           </div>
           <div style={{ 
-            fontSize: '14px', 
+            fontSize: '24px', 
             color: '#fff',
-            lineHeight: '1.5',
+            lineHeight: '1.6',
+            marginBottom: '24px',
             textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
           }}>
             <span style={{ fontWeight: 'bold', color: '#2ee871' }}>16%</span> of token supply locked for <span style={{ fontWeight: 'bold', color: '#2ee871' }}>1 year</span>
           </div>
-        </div>
-
-        {/* Donation counter - simple */}
-        <div 
-          style={{ 
-            padding: '20px', 
-            background: '#fff', 
-            borderRadius: '8px', 
-            border: '2px solid #000',
-            marginBottom: '40px',
-            textAlign: 'center'
-          }}
-        >
           <div style={{ 
-            fontSize: '14px', 
-            fontWeight: 'bold', 
-            marginBottom: '8px', 
+            fontSize: '18px', 
             color: '#fff',
+            lineHeight: '1.8',
             textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
           }}>
-            Rescue Shelter Donations
+            <div style={{ marginBottom: '16px', fontWeight: 'bold' }}>Verify on Streamflow:</div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'center' }}>
+              <a 
+                href="https://app.streamflow.finance/contract/solana/mainnet/B5T1thPoX5oViPZqJLXizD13WRLY1wdcCyoXXUL8uG8y"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ 
+                  color: '#2ee871', 
+                  textDecoration: 'underline',
+                  fontSize: '16px',
+                  wordBreak: 'break-all',
+                  fontWeight: 'bold'
+                }}
+              >
+                Contract 1
+              </a>
+              <a 
+                href="https://app.streamflow.finance/contract/solana/mainnet/FemLBMNVzompWXrcCZGr2eJ7A1jAgGPVHGVuFxLTcYMc"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ 
+                  color: '#2ee871', 
+                  textDecoration: 'underline',
+                  fontSize: '16px',
+                  wordBreak: 'break-all',
+                  fontWeight: 'bold'
+                }}
+              >
+                Contract 2
+              </a>
+              <a 
+                href="https://app.streamflow.finance/contract/solana/mainnet/DvZRQKt6x3x2Zvhi8FC4WJxVzfEb4zwK4KTcxaEL5uMD"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ 
+                  color: '#2ee871', 
+                  textDecoration: 'underline',
+                  fontSize: '16px',
+                  wordBreak: 'break-all',
+                  fontWeight: 'bold'
+                }}
+              >
+                Contract 3
+              </a>
+              <a 
+                href="https://app.streamflow.finance/contract/solana/mainnet/9DVTpjDs1jaMF8wzwcLnvMZ4Ud3tQBkrz1BHKpCbk5vK"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ 
+                  color: '#2ee871', 
+                  textDecoration: 'underline',
+                  fontSize: '16px',
+                  wordBreak: 'break-all',
+                  fontWeight: 'bold'
+                }}
+              >
+                Contract 4
+              </a>
+            </div>
           </div>
-          <div style={{ fontSize: '32px', fontWeight: 'bold', color: '#ff6b9d', marginBottom: '6px' }}>
-            ${donationAmount.toLocaleString()}
-          </div>
-          <div style={{ 
-            fontSize: '12px', 
-            color: '#fff',
-            textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-          }}>
-            Raised for rescue organizations
-          </div>
-        </div>
-
-        {/* Testimonials - simple list */}
-        <div>
-          <h3 
-            className="font-scrappy font-bold-mix"
-            style={{ 
-              fontSize: '24px', 
-              marginBottom: '20px',
-              color: '#fff',
-              fontWeight: 700,
-              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-            }}
-          >
-            Community Testimonials
-          </h3>
-          
-          <div style={{ marginBottom: '20px' }}>
-            <p style={{ 
-              fontSize: '14px', 
-              lineHeight: '1.6', 
-              color: '#fff', 
-              marginBottom: '6px', 
-              fontStyle: 'italic',
-              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-            }}>
-              "BAMBI is more than a memecoin - it's a movement that's actually making a difference!"
-            </p>
-            <div style={{ 
-              fontSize: '12px', 
-              color: '#fff', 
-              fontWeight: 'bold',
-              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-            }}>Sarah M. - Rescue Volunteer</div>
-          </div>
-
-          <div style={{ marginBottom: '20px' }}>
-            <p style={{ 
-              fontSize: '14px', 
-              lineHeight: '1.6', 
-              color: '#fff', 
-              marginBottom: '6px', 
-              fontStyle: 'italic',
-              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-            }}>
-              "Best community I've ever been part of. The cause makes it even better!"
-            </p>
-            <div style={{ 
-              fontSize: '12px', 
-              color: '#fff', 
-              fontWeight: 'bold',
-              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-            }}>Mike T. - Early Adopter</div>
-          </div>
-
-          <div>
-            <p style={{ 
-              fontSize: '14px', 
-              lineHeight: '1.6', 
-              color: '#fff', 
-              marginBottom: '6px', 
-              fontStyle: 'italic',
-              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-            }}>
-              "Finally, a crypto project with heart. Bambi's story touched my soul!"
-            </p>
-            <div style={{ 
-              fontSize: '12px', 
-              color: '#fff', 
-              fontWeight: 'bold',
-              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-            }}>Emma L. - Dog Lover</div>
-          </div>
-        </div>
-
-        {/* CTA */}
-        <div style={{ marginTop: '36px', textAlign: 'center' }}>
-          <a
-            href="https://t.me/PumpBambi"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover-lift"
-            style={{
-              display: 'inline-block',
-              background: '#ff6b9d',
-              color: '#fff',
-              padding: '10px 22px',
-              borderRadius: '8px',
-              textDecoration: 'none',
-              fontSize: '14px',
-              fontWeight: 'bold',
-              height: '42px',
-              lineHeight: '22px',
-              border: '2px solid #000',
-              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-            }}
-          >
-            Join the Pack
-          </a>
         </div>
       </div>
     </section>
