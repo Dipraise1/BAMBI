@@ -1,0 +1,67 @@
+import React from 'react'
+
+// The rescue story - simple paragraphs, no fancy cards
+const RescueStory = () => {
+  return (
+    <section id="story" className="py-12 md:py-16 lg:py-20" style={{ background: '#00ff00' }}>
+      <div className="max-w-[1200px] mx-auto px-4 md:px-8 lg:px-12">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-start">
+          {/* Left Column - Heading and Intro */}
+          <div>
+            <h2 
+              className="font-scrappy font-bold-mix text-3xl md:text-4xl lg:text-5xl mb-4 md:mb-6"
+              style={{ 
+                color: '#00ff00',
+                lineHeight: '1.2',
+                transform: 'translateX(-2px)'
+              }}
+            >
+              THE RESCUE STORY
+            </h2>
+            
+            <p 
+              className="font-mono text-base md:text-lg lg:text-xl mb-6 md:mb-8"
+              style={{ 
+                color: '#333',
+                lineHeight: '1.6'
+              }}
+            >
+              From abandoned on the streets to becoming the face of a movement
+            </p>
+          </div>
+
+          {/* Right Column - Story content */}
+          <div>
+            <p 
+              className="font-mono text-base md:text-lg lg:text-xl leading-relaxed"
+              style={{ 
+                color: '#333',
+                marginBottom: '24px'
+              }}
+            >
+              Bambi had been a stray dog since forever and was rescued from a shelter that was going to put her down. Shes had part of her ear bitten off, her tail cut off, her teeth missing, barely had food her bones were showing. Than she was rescued from the shelter and I took her in. The rest is history, she is much happier where she is at now. She went from being extremely sad and depressed to fulfilled and loved.
+            </p>
+          </div>
+        </div>
+
+        {/* CTA - Full Width */}
+        <div 
+          className="hover-lift mt-8 md:mt-12 lg:mt-16 p-6 md:p-8 lg:p-10 bg-[#ff6b9d] rounded-lg text-center max-w-3xl mx-auto"
+        >
+          <p className="text-base md:text-lg lg:text-xl text-white mb-4 md:mb-6 font-bold">
+            Every transaction helps support rescue organizations
+          </p>
+          <a
+            href="#tokenomics"
+            className="inline-block bg-white text-[#ff6b9d] px-6 py-3 md:px-8 md:py-4 lg:px-10 lg:py-4 rounded-lg text-sm md:text-base lg:text-lg font-bold border-2 border-black"
+            style={{ textDecoration: 'none' }}
+          >
+            Support the Cause
+          </a>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default RescueStory

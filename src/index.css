@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Courier+Prime:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Comic Neue', 'Courier Prime', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-x: hidden;
+    color: #1a1a1a;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  /* scrappy font mix */
+  .font-scrappy {
+    font-family: 'Comic Neue', sans-serif;
+  }
+  
+  .font-mono {
+    font-family: 'Courier Prime', monospace;
+  }
+
+  .font-bold-mix {
+    font-weight: 700;
+  }
+}
+
+/* simple hover effects */
+.hover-lift:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s;
+}
+
+.hover-color:hover {
+  color: #00ff00;
+  transition: color 0.2s;
+}
+
