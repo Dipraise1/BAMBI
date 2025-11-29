@@ -66,8 +66,7 @@ const Hero = () => {
                 className="hover-lift inline-block bg-[#D2B48C] px-6 py-3 md:px-8 md:py-3 lg:px-10 lg:py-4 rounded-lg text-sm md:text-base lg:text-lg font-bold border-2 border-black shadow-lg transition-all duration-200 hover:shadow-xl"
                 style={{ 
                   textDecoration: 'none',
-                  color: '#fff',
-                  textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+                  color: '#fff'
                 }}
               >
                 Join the Pack

@@ -26,16 +26,17 @@ const HowToBuy = () => {
         <div className="space-y-8 md:space-y-12">
           {/* Step 1: Create a Wallet */}
           <motion.div 
-            className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8"
+            className="flex flex-col md:flex-row items-center gap-6 md:gap-8"
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
           >
-            <div className="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 bg-white rounded-full flex items-center justify-center border-2 border-black shadow-lg overflow-hidden">
+            <div className="flex-shrink-0 w-16 h-16 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center border-2 border-black shadow-lg overflow-hidden">
               <img 
                 src="/IMAGE 2025-11-29 19:09:59.jpg" 
                 alt="Wallet" 
-                className="w-full h-full object-contain p-2"
+                className="object-contain"
+                style={{ width: '50%', height: '50%' }}
               />
             </div>
             <div className="flex-1">
@@ -56,16 +57,17 @@ const HowToBuy = () => {
 
           {/* Step 2: Get Some Solana */}
           <motion.div 
-            className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8"
+            className="flex flex-col md:flex-row items-center gap-6 md:gap-8"
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
           >
-            <div className="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 bg-white rounded-full flex items-center justify-center border-2 border-black shadow-lg overflow-hidden">
+            <div className="flex-shrink-0 w-16 h-16 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center border-2 border-black shadow-lg overflow-hidden">
               <img 
                 src="/IMAGE 2025-11-29 19:08:54.jpg" 
                 alt="Solana" 
-                className="w-full h-full object-contain p-2"
+                className="object-contain"
+                style={{ width: '50%', height: '50%' }}
               />
             </div>
             <div className="flex-1">
