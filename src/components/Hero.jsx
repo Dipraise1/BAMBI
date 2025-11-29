@@ -15,11 +15,11 @@ const Hero = () => {
     }
   }
   return (
-    <section className="relative" style={{ minHeight: '65vh', paddingTop: '52px', paddingBottom: '48px', background: '#2ee871' }}>
-      <div className="max-w-[1200px] mx-auto px-4" style={{ paddingLeft: '1.2rem', paddingRight: '1.2rem' }}>
+    <section className="relative overflow-x-hidden" style={{ minHeight: '65vh', paddingTop: '52px', paddingBottom: '48px', background: '#2ee871' }}>
+      <div className="max-w-[1200px] mx-auto px-4" style={{ paddingLeft: '1rem', paddingRight: '1rem' }}>
         <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 lg:gap-12" style={{ alignItems: 'flex-start' }}>
           {/* Left - Image, intentionally slightly off */}
-          <div className="relative w-full md:w-auto animate-fadeInLeft" style={{ transform: 'translateX(3px)' }}>
+          <div className="relative w-full md:w-auto animate-fadeInLeft md:translate-x-[3px]">
             <div className="w-full max-w-[450px] md:max-w-[550px] lg:max-w-[600px] mx-auto md:mx-0 h-[350px] md:h-[450px] lg:h-[500px]" style={{ borderRadius: '8px', overflow: 'hidden', border: '2px solid #000' }}>
               <img
                 src="/IMAGE 2025-11-29 11:05:00.jpg"
@@ -52,7 +52,7 @@ const Hero = () => {
           </div>
 
           {/* Right - Text, slightly different alignment */}
-          <div className="flex-1 animate-fadeInRight" style={{ paddingTop: '12px', transform: 'translateX(-2px)' }}>
+          <div className="flex-1 animate-fadeInRight w-full md:-translate-x-[2px]" style={{ paddingTop: '12px' }}>
             <h1 
               className="font-scrappy font-bold-mix text-4xl md:text-5xl lg:text-6xl"
               style={{ 
@@ -100,10 +100,13 @@ const Hero = () => {
 
             {/* Contract Address */}
             <div 
-              className="font-mono w-full md:w-auto text-xs md:text-sm lg:text-base mb-4 p-3 md:p-4 bg-white rounded-lg border-2 border-black inline-block break-all animate-fadeInUp cursor-pointer transition-all duration-200 hover:bg-gray-50 hover:shadow-md"
+              className="font-mono w-full text-xs md:text-sm lg:text-base mb-4 p-3 md:p-4 bg-white rounded-lg border-2 border-black break-all animate-fadeInUp cursor-pointer transition-all duration-200 hover:bg-gray-50 hover:shadow-md"
               style={{ 
                 animationDelay: '0.6s',
-                animationFillMode: 'both'
+                animationFillMode: 'both',
+                maxWidth: '100%',
+                wordBreak: 'break-all',
+                overflowWrap: 'break-word'
               }}
               onClick={handleCopy}
               title="Click to copy"

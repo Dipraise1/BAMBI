@@ -16,7 +16,7 @@ function App() {
   }, [])
 
   return (
-    <div className="min-h-screen" style={{ background: '#2ee871' }}>
+    <div className="min-h-screen overflow-x-hidden" style={{ background: '#2ee871', width: '100%', maxWidth: '100vw' }}>
       <BorderBambi />
       <PawTrail />
       <FloatingElements />
