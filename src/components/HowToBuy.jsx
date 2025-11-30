@@ -31,7 +31,7 @@ const HowToBuy = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
           >
-            <div className="flex-shrink-0 w-16 h-16 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center border-2 border-black shadow-lg overflow-hidden">
+            <div className="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 bg-white rounded-full flex items-center justify-center border-2 border-black shadow-lg overflow-hidden">
               <img 
                 src="/IMAGE 2025-11-29 19:09:59.jpg" 
                 alt="Wallet" 
@@ -62,7 +62,7 @@ const HowToBuy = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
           >
-            <div className="flex-shrink-0 w-16 h-16 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center border-2 border-black shadow-lg overflow-hidden">
+            <div className="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 bg-white rounded-full flex items-center justify-center border-2 border-black shadow-lg overflow-hidden">
               <img 
                 src="/IMAGE 2025-11-29 19:08:54.jpg" 
                 alt="Solana" 
