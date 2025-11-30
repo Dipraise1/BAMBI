@@ -89,14 +89,14 @@ const HowToBuy = () => {
 
           {/* Step 3: Switch Solana for BAMBI */}
           <motion.div 
-            className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8"
+            className="flex flex-col md:flex-row items-center gap-6 md:gap-8"
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.6, ease: 'easeOut' }}
           >
             <div className="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 bg-white rounded-full flex items-center justify-center border-2 border-black shadow-lg overflow-hidden">
               <img 
-                src="/IMAGE 2025-11-29 11:56:35.jpg" 
+                src="/IMAGE 2025-11-30 14:09:15.jpg" 
                 alt="BAMBI" 
                 className="w-full h-full object-cover"
               />
