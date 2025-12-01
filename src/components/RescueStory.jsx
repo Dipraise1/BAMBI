@@ -55,7 +55,7 @@ const RescueStory = () => {
                 fontWeight: 500
               }}
             >
-              Bambi had been a stray dog since forever and was rescued from a shelter that was going to put her down. Shes had part of her ear bitten off, her tail cut off, her teeth missing, barely had food her bones were showing. Than she was rescued from the shelter and I took her in. The rest is history, she is much happier where she is at now. She went from being extremely sad and depressed to fulfilled and loved.
+              Bambi had been a stray dog for as long as anyone could remember and was rescued from a shelter that was about to put her down. She had part of her ear bitten off, her tail cut off, several missing teeth, and she'd had so little food that her bones were showing. Then she was rescued from the shelter, and I took her in. The rest is history. She is so much happier now—she's gone from being extremely sad and depressed to feeling fulfilled and loved.
             </p>
           </motion.div>
         </div>
@@ -69,7 +69,7 @@ const RescueStory = () => {
         >
           <div className="rounded-lg overflow-hidden border-2 border-black" style={{ background: '#fff' }}>
             <img
-              src="/IMAGE 2025-11-29 20:28:34.jpg"
+              src="/IMAGE 2025-12-01 13:59:45.jpg"
               alt="Bambi"
               className="w-full h-full object-cover"
               style={{ minHeight: '400px', display: 'block' }}

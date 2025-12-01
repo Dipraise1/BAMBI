@@ -17,10 +17,14 @@
     line-height: 1.5;
     overflow-x: hidden;
     color: #1a1a1a;
+    background: #2ee871;
+    overscroll-behavior: none;
   }
 
   html {
     scroll-behavior: smooth;
+    background: #2ee871;
+    overscroll-behavior: none;
   }
 }
 

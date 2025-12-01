@@ -41,7 +41,7 @@ const Footer = () => {
   const dexScreenerLink = socialLinks.find(link => link.name === "DexScreener")
 
   return (
-    <footer className="text-white py-16 px-4 relative overflow-hidden" style={{ background: 'linear-gradient(to bottom, #2ee871, #25d366)' }}>
+    <footer className="text-white py-16 px-4 relative overflow-hidden" style={{ background: 'linear-gradient(to bottom, #2ee871, #25d366)', paddingBottom: 'calc(4rem + 28px)', marginBottom: '0' }}>
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -63,13 +63,17 @@ const Footer = () => {
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover-lift inline-flex items-center justify-center w-11 h-11 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-white rounded-lg border-2 border-black transition-transform duration-200"
+                className="inline-flex items-center justify-center w-11 h-11 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-white rounded-lg border-2 border-black"
                 style={{ textDecoration: 'none' }}
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ scale: 1.2, rotate: 5 }}
-                whileTap={{ scale: 0.9 }}
+                whileHover={{ 
+                  scale: 1.15, 
+                  y: -4,
+                  transition: { duration: 0.2, ease: "easeOut" }
+                }}
+                whileTap={{ scale: 0.95 }}
                 aria-label={social.name}
               >
                 <img 
@@ -91,13 +95,17 @@ const Footer = () => {
                 href={dexScreenerLink.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover-lift inline-flex items-center justify-center w-11 h-11 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-white rounded-lg border-2 border-black transition-transform duration-200"
+                className="inline-flex items-center justify-center w-11 h-11 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-white rounded-lg border-2 border-black"
                 style={{ textDecoration: 'none' }}
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: regularLinks.length * 0.1 }}
-                whileHover={{ scale: 1.2, rotate: 5 }}
-                whileTap={{ scale: 0.9 }}
+                whileHover={{ 
+                  scale: 1.15, 
+                  y: -4,
+                  transition: { duration: 0.2, ease: "easeOut" }
+                }}
+                whileTap={{ scale: 0.95 }}
                 aria-label={dexScreenerLink.name}
               >
                 <img 
