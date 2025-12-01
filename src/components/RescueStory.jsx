@@ -32,9 +32,9 @@ const RescueStory = () => {
             <p 
               className="font-mono text-base md:text-lg lg:text-xl mb-6 md:mb-8"
               style={{ 
-                color: '#fff',
+                color: '#000',
                 lineHeight: '1.6',
-                fontWeight: 500
+                fontWeight: 'bold'
               }}
             >
               From abandoned on the streets to becoming the face of a movement
@@ -50,9 +50,9 @@ const RescueStory = () => {
             <p 
               className="font-mono text-base md:text-lg lg:text-xl leading-relaxed"
               style={{ 
-                color: '#fff',
+                color: '#000',
                 marginBottom: '24px',
-                fontWeight: 500
+                fontWeight: 'bold'
               }}
             >
               Bambi had been a stray dog for as long as anyone could remember and was rescued from a shelter that was about to put her down. She had part of her ear bitten off, her tail cut off, several missing teeth, and she'd had so little food that her bones were showing. Then she was rescued from the shelter, and I took her in. The rest is history. She is so much happier now—she's gone from being extremely sad and depressed to feeling fulfilled and loved.

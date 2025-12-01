@@ -19,6 +19,11 @@
     color: #1a1a1a;
     background: #2ee871;
     overscroll-behavior: none;
+    font-weight: bold;
+  }
+  
+  * {
+    font-weight: bold;
   }
 
   html {
@@ -60,5 +65,32 @@
 .animate-fadeInUp,
 .animate-bounceIn {
   animation-fill-mode: both;
+}
+
+/* Animated gradient for breed text */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
+
+@keyframes textFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.animate-gradient-text {
+  background-size: 300% 100%;
+  animation: gradientShift 4s ease-in-out infinite, textFloat 2.5s ease-in-out infinite;
 }
 

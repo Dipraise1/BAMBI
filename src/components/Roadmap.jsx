@@ -91,8 +91,8 @@ const Roadmap = () => {
             Roadmap
           </h2>
           <p className="text-base md:text-lg lg:text-xl max-w-3xl mx-auto" style={{ 
-            color: '#fff',
-            textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+            color: '#000',
+            fontWeight: 'bold'
           }}>
             Our journey from rescue to breaking the internet
           </p>
@@ -132,7 +132,8 @@ const Roadmap = () => {
                       </span>
                       <span className="text-sm font-semibold" style={{ 
                         color: '#fff',
-                        textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+                        textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000',
+                        fontWeight: 'bold'
                       }}>{milestone.phase}</span>
                     </div>
                     <h3 className="text-xl md:text-2xl font-bold mb-3" style={{ 
@@ -140,18 +141,19 @@ const Roadmap = () => {
                       textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
                     }}>{milestone.title}</h3>
                     <p className="text-base md:text-lg mb-4" style={{ 
-                      color: '#fff', 
+                      color: '#000', 
                       lineHeight: '1.6',
-                      textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+                      fontWeight: 'bold'
                     }}>{milestone.description}</p>
                     <ul className="space-y-2">
                       {milestone.tasks.map((task, taskIndex) => (
                         <li key={taskIndex} className="flex items-center gap-2 text-base md:text-lg" style={{ 
                           color: '#fff',
-                          textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+                          textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000',
+                          fontWeight: 'bold'
                         }}>
                           <span className="text-[#2ee871] font-bold text-lg">✓</span>
-                          <span>{task}</span>
+                          <span style={{ fontWeight: 'bold' }}>{task}</span>
                         </li>
                       ))}
                     </ul>
@@ -175,8 +177,8 @@ const Roadmap = () => {
               textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
             }}>Join Us on This Journey</h3>
             <p className="text-base md:text-lg lg:text-xl mb-6" style={{ 
-              color: '#fff',
-              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+              color: '#000',
+              fontWeight: 'bold'
             }}>
               Together, we're building something special - a memecoin with heart that actually makes a difference
             </p>

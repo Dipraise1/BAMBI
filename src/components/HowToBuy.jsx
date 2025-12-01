@@ -47,8 +47,8 @@ const HowToBuy = () => {
                 CREATE A WALLET
               </h3>
               <p className="text-base md:text-lg leading-relaxed" style={{ 
-                color: '#fff',
-                fontWeight: 500
+                color: '#000',
+                fontWeight: 'bold'
               }}>
                 Download Phantom (or your preferred wallet) for free from the App Store or Google Play. 
                 If you're on desktop, install the Phantom Chrome extension directly from the Chrome Web Store.
@@ -79,8 +79,8 @@ const HowToBuy = () => {
                 GET SOME SOLANA
               </h3>
               <p className="text-base md:text-lg leading-relaxed" style={{ 
-                color: '#fff',
-                fontWeight: 500
+                color: '#000',
+                fontWeight: 'bold'
               }}>
                 Make sure your wallet has SOL to swap into $BAMBI. If you don't have any yet, you can: 
                 Purchase SOL directly in your wallet, Transfer from another wallet, or Buy on an exchange 
@@ -111,8 +111,8 @@ const HowToBuy = () => {
                 SWITCH SOLANA FOR $BAMBI
               </h3>
               <p className="text-base md:text-lg leading-relaxed" style={{ 
-                color: '#fff',
-                fontWeight: 500
+                color: '#000',
+                fontWeight: 'bold'
               }}>
                 Exchange your SOL for $BAMBI and show your support!
               </p>

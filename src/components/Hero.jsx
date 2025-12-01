@@ -77,6 +77,20 @@ const Hero = () => {
                 style={{ display: 'block' }}
               />
             </div>
+            <p 
+              className="font-mono text-sm md:text-base lg:text-lg mt-3 text-center md:text-left animate-gradient-text"
+              style={{ 
+                background: 'linear-gradient(90deg, #8B4513 0%, #000 50%, #8B4513 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+                color: 'transparent',
+                fontWeight: 'bold',
+                display: 'inline-block'
+              }}
+            >
+              Breed: Husky / Australian Cattle Red Heeler / Shepard
+            </p>
           </div>
 
           {/* Right - Text, centered */}
@@ -99,8 +113,8 @@ const Hero = () => {
               style={{ 
                 lineHeight: '1.4', 
                 marginBottom: '22px',
-                color: '#fff',
-                fontWeight: 400,
+                color: '#000',
+                fontWeight: 'bold',
                 animationDelay: '0.2s',
                 animationFillMode: 'both'
               }}
@@ -182,7 +196,8 @@ const Hero = () => {
             >
               <div className="flex items-center gap-2">
                 <span style={{ 
-                  color: '#000'
+                  color: '#000',
+                  fontWeight: 'bold'
                 }}>
                   CA: {contractAddress}
                 </span>

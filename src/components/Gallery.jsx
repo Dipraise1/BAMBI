@@ -47,8 +47,8 @@ const Gallery = () => {
             Gallery
           </h2>
           <p className="text-base md:text-lg lg:text-xl max-w-3xl mx-auto" style={{ 
-            color: '#fff',
-            textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+            color: '#000',
+            fontWeight: 'bold'
           }}>
             See Bambi's journey from rescue to internet stardom
           </p>
@@ -74,7 +74,7 @@ const Gallery = () => {
                       />
                       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-6 md:p-8 rounded-b-xl">
                         <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-2">{image.title}</h3>
-                        <p className="text-white/95 text-sm md:text-base lg:text-lg">{image.description}</p>
+                        <p className="text-black text-sm md:text-base lg:text-lg" style={{ fontWeight: 'bold' }}>{image.description}</p>
                       </div>
                     </div>
                   </div>
@@ -128,8 +128,8 @@ const Gallery = () => {
               textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
             }}>Before</h3>
             <p className="text-base md:text-lg" style={{ 
-              color: '#fff',
-              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+              color: '#000',
+              fontWeight: 'bold'
             }}>
               Abandoned on the streets, alone and scared
             </p>
@@ -141,8 +141,8 @@ const Gallery = () => {
               textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
             }}>After</h3>
             <p className="text-base md:text-lg" style={{ 
-              color: '#fff',
-              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+              color: '#000',
+              fontWeight: 'bold'
             }}>
               Loved, celebrated, and inspiring a movement
             </p>
