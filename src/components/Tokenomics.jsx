@@ -16,22 +16,22 @@ const Tokenomics = () => {
         >
           TOKENOMICS
         </h2>
-
+        
         {/* Container with Token Lock and Meme Video side by side */}
         <div className="flex flex-col lg:flex-row gap-6 md:gap-8 items-stretch lg:items-center justify-center w-full" style={{ marginBottom: '32px' }}>
           {/* Locked Supply Notice */}
           <div 
             className="w-full lg:flex-1"
-            style={{ 
+          style={{ 
               padding: 'clamp(20px, 4vw, 48px)',
               background: '#fff', 
               borderRadius: '12px', 
               border: '3px solid #000',
-              textAlign: 'center',
+            textAlign: 'center',
               maxWidth: '100%',
               minWidth: '0'
-            }}
-          >
+          }}
+        >
             <div style={{ 
               fontSize: 'clamp(24px, 4vw, 36px)', 
               fontWeight: 'bold', 
@@ -88,7 +88,7 @@ const Tokenomics = () => {
                   href="https://app.streamflow.finance/contract/solana/mainnet/DvZRQKt6x3x2Zvhi8FC4WJxVzfEb4zwK4KTcxaEL5uMD"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ 
+          style={{ 
                     color: '#2ee871', 
                     textDecoration: 'underline',
                     fontSize: 'clamp(12px, 2vw, 16px)',
@@ -102,7 +102,7 @@ const Tokenomics = () => {
                   href="https://app.streamflow.finance/contract/solana/mainnet/9DVTpjDs1jaMF8wzwcLnvMZ4Ud3tQBkrz1BHKpCbk5vK"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ 
+            style={{ 
                     color: '#2ee871', 
                     textDecoration: 'underline',
                     fontSize: 'clamp(12px, 2vw, 16px)',
@@ -113,7 +113,7 @@ const Tokenomics = () => {
                   Contract 4
                 </a>
               </div>
-            </div>
+          </div>
           </div>
 
           {/* Meme Video */}

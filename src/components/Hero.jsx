@@ -64,27 +64,28 @@ const Hero = () => {
     }
   }
   return (
-    <section className="relative overflow-x-hidden" style={{ minHeight: '75vh', paddingTop: '120px', paddingBottom: '64px', background: '#2ee871' }}>
-      <div className="max-w-[1200px] mx-auto px-4" style={{ paddingLeft: '1rem', paddingRight: '1rem' }}>
-        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 lg:gap-12" style={{ alignItems: 'flex-start' }}>
-          {/* Left - Image, intentionally slightly off */}
-          <div className="relative w-full md:w-auto animate-fadeInLeft md:translate-x-[3px]">
-            <div className="w-full max-w-[550px] md:max-w-[650px] lg:max-w-[750px] mx-auto md:mx-0 h-[450px] md:h-[550px] lg:h-[650px]" style={{ borderRadius: '8px', overflow: 'hidden', border: '2px solid #000' }}>
+    <section className="relative overflow-x-hidden flex items-center justify-center" style={{ minHeight: '65vh', paddingTop: '96px', paddingBottom: '24px', background: '#2ee871' }}>
+      <div className="max-w-[1200px] mx-auto px-4 w-full" style={{ paddingLeft: '1rem', paddingRight: '1rem' }}>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-12">
+          {/* Left - Image, centered */}
+          <div className="relative w-full md:w-auto animate-fadeInLeft">
+            <div className="w-full max-w-[500px] md:max-w-[600px] lg:max-w-[650px] mx-auto md:mx-0" style={{ borderRadius: '8px', overflow: 'hidden', border: '2px solid #000' }}>
               <img
                 src="/IMAGE 2025-11-29 11:05:00.jpg"
                 alt="Bambi"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
+                style={{ display: 'block' }}
               />
             </div>
           </div>
 
-          {/* Right - Text, slightly different alignment */}
-          <div className="flex-1 animate-fadeInRight w-full md:-translate-x-[2px]" style={{ paddingTop: '12px' }}>
+          {/* Right - Text, centered */}
+          <div className="flex-1 animate-fadeInRight w-full text-center md:text-left">
             <h1 
-              className="font-scrappy font-bold-mix text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
+              className="font-scrappy font-bold-mix text-5xl md:text-6xl lg:text-7xl"
               style={{ 
                 lineHeight: '1.1', 
-                marginBottom: '20px',
+                marginBottom: '14px',
                 color: '#fff',
                 fontWeight: 700,
                 textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
@@ -94,10 +95,10 @@ const Hero = () => {
             </h1>
             
             <p 
-              className="font-mono text-lg md:text-xl lg:text-2xl xl:text-3xl animate-fadeInUp"
+              className="font-mono text-lg md:text-xl lg:text-2xl animate-fadeInUp"
               style={{ 
                 lineHeight: '1.4', 
-                marginBottom: '28px',
+                marginBottom: '22px',
                 color: '#fff',
                 fontWeight: 400,
                 animationDelay: '0.2s',
@@ -112,7 +113,7 @@ const Hero = () => {
                 href="https://t.me/PumpBambi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover-lift inline-block px-8 py-4 md:px-10 md:py-4 lg:px-12 lg:py-5 rounded-lg text-base md:text-lg lg:text-xl xl:text-2xl font-bold border-2 border-black shadow-lg transition-all duration-300"
+                className="hover-lift inline-block px-7 py-3.5 md:px-9 md:py-4 lg:px-11 lg:py-5 rounded-lg text-base md:text-lg lg:text-xl font-bold border-2 border-black shadow-lg transition-all duration-300"
                 style={{ 
                   textDecoration: 'none',
                   color: '#fff',
@@ -133,7 +134,7 @@ const Hero = () => {
               </a>
               <a
                 href="#story"
-                className="hover-lift inline-block px-8 py-4 md:px-10 md:py-4 lg:px-12 lg:py-5 rounded-lg text-base md:text-lg lg:text-xl xl:text-2xl font-bold border-2 border-black shadow-lg transition-all duration-300"
+                className="hover-lift inline-block px-7 py-3.5 md:px-9 md:py-4 lg:px-11 lg:py-5 rounded-lg text-base md:text-lg lg:text-xl font-bold border-2 border-black shadow-lg transition-all duration-300"
                 style={{ 
                   textDecoration: 'none',
                   color: '#fff',
@@ -156,10 +157,11 @@ const Hero = () => {
 
             {/* Contract Address */}
             <div 
-              className="font-mono w-full text-sm md:text-base lg:text-lg xl:text-xl mb-4 p-4 md:p-5 lg:p-6 bg-white rounded-lg border-2 border-black break-all animate-fadeInUp cursor-pointer transition-all duration-200 hover:bg-gray-50 hover:shadow-md active:bg-gray-100"
+              className="font-mono w-full text-sm md:text-base lg:text-lg mb-4 p-4 md:p-5 bg-white rounded-lg border-2 border-black break-all animate-fadeInUp cursor-pointer transition-all duration-200 hover:bg-gray-50 hover:shadow-md active:bg-gray-100"
               style={{ 
                 animationDelay: '0.6s',
                 animationFillMode: 'both',
+                width: '100%',
                 maxWidth: '100%',
                 wordBreak: 'break-all',
                 overflowWrap: 'break-word',
@@ -186,8 +188,8 @@ const Hero = () => {
                 </span>
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
-                  width="20" 
-                  height="20" 
+                  width="16" 
+                  height="16" 
                   viewBox="0 0 24 24" 
                   fill="none" 
                   stroke="#000" 
@@ -207,7 +209,7 @@ const Hero = () => {
                 </svg>
               </div>
               {copied && (
-                <div className="text-sm md:text-base mt-1 text-[#2ee871] font-bold">
+                <div className="text-xs mt-1 text-[#2ee871] font-bold">
                   Copied!
                 </div>
               )}
@@ -219,40 +221,40 @@ const Hero = () => {
                 href="https://x.com/PumpBambi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover-lift inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-24 xl:h-24 bg-white rounded-lg border-2 border-black transition-transform duration-200"
+                className="hover-lift inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-white rounded-lg border-2 border-black transition-transform duration-200"
                 style={{ textDecoration: 'none' }}
               >
                 <img 
                   src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000'%3E%3Cpath d='M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z'/%3E%3C/svg%3E"
                   alt="X (Twitter)"
-                  className="w-8 h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12"
+                  className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
                 />
               </a>
               <a
                 href="http://t.me/PumpBambi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover-lift inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-24 xl:h-24 bg-white rounded-lg border-2 border-black transition-transform duration-200"
+                className="hover-lift inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-white rounded-lg border-2 border-black transition-transform duration-200"
                 style={{ textDecoration: 'none' }}
               >
                 <img 
                   src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000'%3E%3Cpath d='M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.166 1.699-.84 5.816-1.189 7.699-.168.9-.5 1.201-.82 1.23-.696.064-1.226-.46-1.901-.903-1.056-.693-1.653-1.124-2.678-1.8-1.185-.781-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.139-5.062 3.345-.479.329-.913.489-1.302.481-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635.099-.002.321.023.465.14.118.095.151.223.167.312.017.09.037.293.021.451z'/%3E%3C/svg%3E"
                   alt="Telegram"
-                  className="w-8 h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12"
+                  className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
                 />
               </a>
               <a
                 href="https://dexscreener.com/solana/4kAFtWjyzrpx6E7TFVhcVKKDEsxc8H3uYtg7dTnXpump"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover-lift inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-24 xl:h-24 bg-white rounded-lg border-2 border-black transition-transform duration-200"
+                className="hover-lift inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-white rounded-lg border-2 border-black transition-transform duration-200"
                 style={{ textDecoration: 'none' }}
                 title="DexScreener"
               >
                 <img 
                   src="https://dexscreener.com/favicon.ico"
                   alt="DexScreener"
-                  className="w-8 h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12"
+                  className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
                   onError={(e) => {
                     e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M3 3h18v18H3V3zm2 2v14h14V5H5zm2 2h10v2H7V7zm0 4h10v2H7v-2zm0 4h7v2H7v-2z'/%3E%3C/svg%3E"
                   }}
@@ -262,14 +264,14 @@ const Hero = () => {
                 href="https://www.dextools.io/app/en/solana/pair-explorer/4kAFtWjyzrpx6E7TFVhcVKKDEsxc8H3uYtg7dTnXpump"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover-lift inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-24 xl:h-24 bg-white rounded-lg border-2 border-black transition-transform duration-200"
+                className="hover-lift inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-white rounded-lg border-2 border-black transition-transform duration-200"
                 style={{ textDecoration: 'none' }}
                 title="DexTools"
               >
                 <img 
                   src="/Dextools_Logo.svg"
                   alt="DexTools"
-                  className="w-8 h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12"
+                  className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
                   onError={(e) => {
                     e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23000;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23333;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill='url(%23grad)' d='M60 10L10 35l50 25 50-25-50-25zM10 85l50 25 50-25M10 60l50 25 50-25'/%3E%3C/svg%3E"
                   }}
@@ -279,14 +281,14 @@ const Hero = () => {
                 href="https://pump.fun/4kAFtWjyzrpx6E7TFVhcVKKDEsxc8H3uYtg7dTnXpump"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover-lift inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-24 xl:h-24 bg-white rounded-lg border-2 border-black transition-transform duration-200"
+                className="hover-lift inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-white rounded-lg border-2 border-black transition-transform duration-200"
                 style={{ textDecoration: 'none' }}
                 title="Pump.fun"
               >
                 <img 
                   src="https://pump.fun/favicon.ico"
                   alt="Pump.fun"
-                  className="w-8 h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12"
+                  className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
                   onError={(e) => {
                     e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23000' stroke-width='2'/%3E%3Cpath fill='%23000' d='M8 12h8M12 8v8'/%3E%3C/svg%3E"
                   }}
