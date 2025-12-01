@@ -69,15 +69,15 @@ const RescueStory = () => {
         >
           <div className="rounded-lg overflow-hidden border-2 border-black" style={{ background: '#fff' }}>
             <img
-              src="/IMAGE 2025-11-29 11:05:00.jpg"
-              alt="Bambi Today"
+              src="/IMAGE 2025-11-29 20:28:34.jpg"
+              alt="Bambi"
               className="w-full h-full object-cover"
               style={{ minHeight: '400px', display: 'block' }}
             />
           </div>
           <div className="rounded-lg overflow-hidden border-2 border-black" style={{ background: '#fff' }}>
             <img
-              src="/IMAGE 2025-11-29 11:56:35.jpg"
+              src="/IMAGE 2025-11-30 14:09:15.jpg"
               alt="Bambi"
               className="w-full h-full object-cover"
               style={{ minHeight: '400px', display: 'block' }}
