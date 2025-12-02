@@ -78,7 +78,7 @@ const Hero = () => {
               />
             </div>
             <p 
-              className="font-mono text-sm md:text-base lg:text-lg mt-3 text-center md:text-left animate-gradient-text"
+              className="font-mono text-base md:text-lg lg:text-xl mt-3 text-center md:text-left animate-gradient-text"
               style={{ 
                 background: 'linear-gradient(90deg, #8B4513 0%, #000 50%, #8B4513 100%)',
                 WebkitBackgroundClip: 'text',
@@ -89,7 +89,7 @@ const Hero = () => {
                 display: 'inline-block'
               }}
             >
-              Breed: Husky / Australian Cattle Red Heeler / Shepard
+              Breed: Husky / Red Heeler / Shepard
             </p>
           </div>
 
@@ -311,12 +311,27 @@ const Hero = () => {
                 title="Pump.fun"
               >
                 <img 
-                  src="/IMAGE 2025-12-02 17:03:24.jpg"
+                  src="https://pump.fun/favicon.ico"
                   alt="Pump.fun"
-                  className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 object-contain"
+                  className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
                   onError={(e) => {
                     e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23000' stroke-width='2'/%3E%3Cpath fill='%23000' d='M8 12h8M12 8v8'/%3E%3C/svg%3E"
                   }}
+                />
+              </a>
+              <a
+                href="https://trade.padre.gg/trade/solana/FA8DzqyxtWkSJeTSVS6apu9MAX9Np2MrW6pVYan4rkFo?rk=bambi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover-lift inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-lg border-2 border-black transition-transform duration-200"
+                style={{ textDecoration: 'none', background: 'transparent' }}
+                title="Terminal"
+              >
+                <img 
+                  src="/IMAGE 2025-12-02 17:03:24.jpg"
+                  alt="Terminal"
+                  className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 object-contain rounded-lg"
+                  style={{ background: 'transparent' }}
                 />
               </a>
             </div>

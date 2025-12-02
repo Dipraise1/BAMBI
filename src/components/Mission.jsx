@@ -51,7 +51,7 @@ const Mission = () => {
               color: '#000',
               fontWeight: 'bold'
             }}>
-              Our vision is to create a sustainable cycle of impact: the more the project thrives, the more animals we can save. With enough support, we hope to fund emergency pulls from high-risk shelters, provide medical care and rehabilitation, and help dogs find loving, permanent homes.
+              Our vision is to create a sustainable cycle of impact: the more the project thrives, the more animals we can save. With enough support, we aim to help dogs find loving, permanent homes.
             </p>
 
             <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ 
