@@ -124,6 +124,55 @@ const HowToBuy = () => {
               </p>
             </div>
           </motion.div>
+
+          {/* Trading Links */}
+          <motion.div 
+            className="flex flex-col items-center gap-6 md:gap-8 mt-8"
+            initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.8, ease: 'easeOut' }}
+          >
+            <h3 className="text-2xl md:text-3xl font-bold text-center" style={{ 
+              color: '#fff',
+              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+            }}>
+              TRADE $BAMBI
+            </h3>
+            <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
+              <a
+                href="https://trade.padre.gg/trade/solana/FA8DzqyxtWkSJeTSVS6apu9MAX9Np2MrW6pVYan4rkFo?rk=bambi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover-lift inline-flex items-center gap-3 px-6 py-3 bg-white rounded-lg border-2 border-black shadow-lg transition-all duration-200"
+                style={{ textDecoration: 'none' }}
+              >
+                <img 
+                  src="/IMAGE 2025-12-02 17:03:24.jpg"
+                  alt="Pump.fun Terminal"
+                  className="w-8 h-8 object-contain"
+                />
+                <span className="font-mono text-base md:text-lg font-bold" style={{ color: '#000' }}>
+                  Trade on Padre
+                </span>
+              </a>
+              <a
+                href="https://pump.fun/4kAFtWjyzrpx6E7TFVhcVKKDEsxc8H3uYtg7dTnXpump"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover-lift inline-flex items-center gap-3 px-6 py-3 bg-white rounded-lg border-2 border-black shadow-lg transition-all duration-200"
+                style={{ textDecoration: 'none' }}
+              >
+                <img 
+                  src="/IMAGE 2025-12-02 17:03:24.jpg"
+                  alt="Pump.fun Terminal"
+                  className="w-8 h-8 object-contain"
+                />
+                <span className="font-mono text-base md:text-lg font-bold" style={{ color: '#000' }}>
+                  Trade on Pump.fun
+                </span>
+              </a>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -171,14 +171,12 @@ const Hero = () => {
 
             {/* Contract Address */}
             <div 
-              className="font-mono w-full text-sm md:text-base lg:text-lg mb-4 p-4 md:p-5 bg-white rounded-lg border-2 border-black break-all animate-fadeInUp cursor-pointer transition-all duration-200 hover:bg-gray-50 hover:shadow-md active:bg-gray-100"
+              className="font-mono w-full text-sm md:text-base lg:text-lg mb-4 p-4 md:p-5 bg-white rounded-lg border-2 border-black animate-fadeInUp cursor-pointer transition-all duration-200 hover:bg-gray-50 hover:shadow-md active:bg-gray-100"
               style={{ 
                 animationDelay: '0.6s',
                 animationFillMode: 'both',
                 width: '100%',
                 maxWidth: '100%',
-                wordBreak: 'break-all',
-                overflowWrap: 'break-word',
                 WebkitTapHighlightColor: 'transparent',
                 touchAction: 'manipulation',
                 userSelect: 'none'
@@ -194,10 +192,11 @@ const Hero = () => {
               }}
               title="Tap to copy"
             >
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 flex-wrap">
                 <span style={{ 
                   color: '#000',
-                  fontWeight: 'bold'
+                  fontWeight: 'bold',
+                  whiteSpace: 'nowrap'
                 }}>
                   CA: {contractAddress}
                 </span>
@@ -301,9 +300,9 @@ const Hero = () => {
                 title="Pump.fun"
               >
                 <img 
-                  src="https://pump.fun/favicon.ico"
+                  src="/IMAGE 2025-12-02 17:03:24.jpg"
                   alt="Pump.fun"
-                  className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
+                  className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 object-contain"
                   onError={(e) => {
                     e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23000' stroke-width='2'/%3E%3Cpath fill='%23000' d='M8 12h8M12 8v8'/%3E%3C/svg%3E"
                   }}

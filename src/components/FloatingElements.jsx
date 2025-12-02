@@ -5,7 +5,7 @@ const FloatingElements = () => {
   const [elements, setElements] = useState([])
 
   useEffect(() => {
-    const emojis = ['🐾', '❤️', '⭐', '✨']
+    const emojis = ['🎄', '🎁', '🌲', '🎄', '🎁', '🌲']
     const newElements = []
 
     for (let i = 0; i < 5; i++) {

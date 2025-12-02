@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import Hero from './components/Hero'
 import VideoSection from './components/VideoSection'
 import RescueStory from './components/RescueStory'
 import HowToBuy from './components/HowToBuy'
 import Tokenomics from './components/Tokenomics'
+import Mission from './components/Mission'
+import RescuedDogs from './components/RescuedDogs'
 import Footer from './components/Footer'
 import FloatingElements from './components/FloatingElements'
 import PawTrail from './components/PawTrail'
@@ -32,7 +35,12 @@ function App() {
       <SectionDivider />
       <Tokenomics />
       <SectionDivider />
+      <Mission />
+      <SectionDivider />
+      <RescuedDogs />
+      <SectionDivider />
       <Footer />
+      <Analytics />
     </div>
   )
 }
