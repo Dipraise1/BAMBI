@@ -95,18 +95,22 @@ const Hero = () => {
 
           {/* Right - Text, centered */}
           <div className="flex-1 animate-fadeInRight w-full text-center md:text-left">
-            <h1 
-              className="font-scrappy font-bold-mix text-5xl md:text-6xl lg:text-7xl"
-              style={{ 
-                lineHeight: '1.1', 
-                marginBottom: '14px',
-                color: '#fff',
-                fontWeight: 700,
-                textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-              }}
-            >
-              BAMBI
-            </h1>
+            <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
+              <span className="text-3xl md:text-4xl lg:text-5xl">🎄</span>
+              <h1 
+                className="font-scrappy font-bold-mix text-5xl md:text-6xl lg:text-7xl"
+                style={{ 
+                  lineHeight: '1.1', 
+                  marginBottom: '14px',
+                  color: '#fff',
+                  fontWeight: 700,
+                  textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+                }}
+              >
+                BAMBI
+              </h1>
+              <span className="text-3xl md:text-4xl lg:text-5xl">🎁</span>
+            </div>
             
             <p 
               className="font-mono text-lg md:text-xl lg:text-2xl animate-fadeInUp"
@@ -171,7 +175,7 @@ const Hero = () => {
 
             {/* Contract Address */}
             <div 
-              className="font-mono w-full text-sm md:text-base lg:text-lg mb-4 p-4 md:p-5 bg-white rounded-lg border-2 border-black animate-fadeInUp cursor-pointer transition-all duration-200 hover:bg-gray-50 hover:shadow-md active:bg-gray-100"
+              className="font-mono w-full text-xs sm:text-sm md:text-base lg:text-lg mb-4 p-3 sm:p-4 md:p-5 bg-white rounded-lg border-2 border-black animate-fadeInUp cursor-pointer transition-all duration-200 hover:bg-gray-50 hover:shadow-md active:bg-gray-100"
               style={{ 
                 animationDelay: '0.6s',
                 animationFillMode: 'both',
@@ -179,7 +183,10 @@ const Hero = () => {
                 maxWidth: '100%',
                 WebkitTapHighlightColor: 'transparent',
                 touchAction: 'manipulation',
-                userSelect: 'none'
+                userSelect: 'none',
+                overflow: 'hidden',
+                wordBreak: 'break-all',
+                overflowWrap: 'break-word'
               }}
               onClick={handleCopy}
               onTouchStart={(e) => {
@@ -192,11 +199,14 @@ const Hero = () => {
               }}
               title="Tap to copy"
             >
-              <div className="flex items-center gap-2 flex-wrap">
+              <div className="flex items-start sm:items-center gap-2 flex-wrap">
                 <span style={{ 
                   color: '#000',
                   fontWeight: 'bold',
-                  whiteSpace: 'nowrap'
+                  wordBreak: 'break-all',
+                  overflowWrap: 'break-word',
+                  flex: '1',
+                  minWidth: '0'
                 }}>
                   CA: {contractAddress}
                 </span>
@@ -211,6 +221,7 @@ const Hero = () => {
                   strokeLinecap="round" 
                   strokeLinejoin="round"
                   className="flex-shrink-0"
+                  style={{ marginTop: '2px' }}
                 >
                   {copied ? (
                     <path d="M20 6L9 17l-5-5" />

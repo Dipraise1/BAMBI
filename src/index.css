@@ -94,3 +94,19 @@
   animation: gradientShift 4s ease-in-out infinite, textFloat 2.5s ease-in-out infinite;
 }
 
+/* Christmas marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.christmas-marquee {
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+  display: inline-block;
+}
+
