@@ -152,25 +152,37 @@ const HowToBuy = () => {
                   className="w-8 h-8 object-contain"
                 />
                 <span className="font-mono text-base md:text-lg font-bold" style={{ color: '#000' }}>
-                  Trade on Padre
+                  Trade on Terminal
                 </span>
               </a>
-              <a
-                href="https://pump.fun/4kAFtWjyzrpx6E7TFVhcVKKDEsxc8H3uYtg7dTnXpump"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover-lift inline-flex items-center gap-3 px-6 py-3 bg-white rounded-lg border-2 border-black shadow-lg transition-all duration-200"
-                style={{ textDecoration: 'none' }}
-              >
-                <img 
-                  src="/IMAGE 2025-12-02 17:03:24.jpg"
-                  alt="Pump.fun Terminal"
-                  className="w-8 h-8 object-contain"
-                />
-                <span className="font-mono text-base md:text-lg font-bold" style={{ color: '#000' }}>
-                  Trade on Pump.fun
-                </span>
-              </a>
+              <div className="flex flex-col items-center gap-2">
+                <div className="w-12 h-12 md:w-14 md:h-14 bg-white rounded-full flex items-center justify-center border-2 border-black shadow-lg">
+                  <img 
+                    src="https://pump.fun/favicon.ico"
+                    alt="Pump.fun"
+                    className="w-6 h-6 md:w-7 md:h-7 object-contain"
+                    onError={(e) => {
+                      e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23000' stroke-width='2'/%3E%3Cpath fill='%23000' d='M8 12h8M12 8v8'/%3E%3C/svg%3E"
+                    }}
+                  />
+                </div>
+                <a
+                  href="https://pump.fun/4kAFtWjyzrpx6E7TFVhcVKKDEsxc8H3uYtg7dTnXpump"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover-lift inline-flex items-center gap-3 px-6 py-3 bg-white rounded-lg border-2 border-black shadow-lg transition-all duration-200"
+                  style={{ textDecoration: 'none' }}
+                >
+                  <img 
+                    src="/IMAGE 2025-12-02 17:03:24.jpg"
+                    alt="Pump.fun Terminal"
+                    className="w-8 h-8 object-contain"
+                  />
+                  <span className="font-mono text-base md:text-lg font-bold" style={{ color: '#000' }}>
+                    Trade on Pump.fun
+                  </span>
+                </a>
+              </div>
             </div>
           </motion.div>
         </div>

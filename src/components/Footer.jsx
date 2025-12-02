@@ -34,6 +34,12 @@ const Footer = () => {
       icon: "https://pump.fun/favicon.ico",
       fallback: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23000' stroke-width='2'/%3E%3Cpath fill='%23000' d='M8 12h8M12 8v8'/%3E%3C/svg%3E"
     },
+    { 
+      name: "Terminal", 
+      url: "https://trade.padre.gg/trade/solana/FA8DzqyxtWkSJeTSVS6apu9MAX9Np2MrW6pVYan4rkFo?rk=bambi", 
+      icon: "/IMAGE 2025-12-02 17:03:24.jpg",
+      fallback: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23000' stroke-width='2'/%3E%3Cpath fill='%23000' d='M8 12h8M12 8v8'/%3E%3C/svg%3E"
+    },
   ]
 
   // Separate DexScreener from other links
