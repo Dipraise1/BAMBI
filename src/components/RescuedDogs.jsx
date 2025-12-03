@@ -20,7 +20,7 @@ const RescuedDogs = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          RESCUE DOGS THAT NEED A HOME
+          RESCUED DOGS THAT NEED A HOME
         </motion.h2>
 
         <motion.div 

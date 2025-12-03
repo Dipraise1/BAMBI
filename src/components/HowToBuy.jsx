@@ -108,7 +108,7 @@ const HowToBuy = () => {
                 color: '#fff',
                 textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
               }}>
-                SWITCH SOLANA FOR $BAMBI
+                SWAP SOLANA FOR $BAMBI
               </h3>
               <p className="text-base md:text-lg leading-relaxed" style={{ 
                 color: '#000',
@@ -125,47 +125,47 @@ const HowToBuy = () => {
             </div>
           </motion.div>
 
-          {/* Trading Links */}
+          {/* Step 4: Trade $BAMBI */}
           <motion.div 
-            className="flex flex-col items-center gap-6 md:gap-8 mt-8"
-            initial={{ opacity: 0, y: 50 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            className="flex flex-col md:flex-row items-center gap-6 md:gap-8"
+            initial={{ opacity: 0, x: -50 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.8, ease: 'easeOut' }}
           >
-            <h3 className="text-2xl md:text-3xl font-bold text-center" style={{ 
-              color: '#fff',
-              textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-            }}>
-              TRADE $BAMBI
-            </h3>
-            <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
-              <a
-                href="https://trade.padre.gg/trade/solana/FA8DzqyxtWkSJeTSVS6apu9MAX9Np2MrW6pVYan4rkFo?rk=bambi"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover-lift inline-flex items-center gap-3 px-6 py-3 bg-white rounded-lg border-2 border-black shadow-lg transition-all duration-200"
-                style={{ textDecoration: 'none' }}
-              >
-                <img 
-                  src="/IMAGE 2025-12-02 17:03:24.jpg"
-                  alt="Pump.fun Terminal"
-                  className="w-8 h-8 object-contain"
-                />
-                <span className="font-mono text-base md:text-lg font-bold" style={{ color: '#000' }}>
-                  Trade on Terminal
-                </span>
-              </a>
-              <div className="flex flex-col items-center gap-2">
-                <div className="w-12 h-12 md:w-14 md:h-14 bg-white rounded-full flex items-center justify-center border-2 border-black shadow-lg">
+            <div className="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 bg-white rounded-full flex items-center justify-center border-2 border-black shadow-lg">
+              <img 
+                src="https://pump.fun/favicon.ico"
+                alt="Pump.fun"
+                className="w-12 h-12 md:w-14 md:h-14 object-contain"
+                onError={(e) => {
+                  e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23000' stroke-width='2'/%3E%3Cpath fill='%23000' d='M8 12h8M12 8v8'/%3E%3C/svg%3E"
+                }}
+              />
+            </div>
+            <div className="flex-1">
+              <h3 className="text-2xl md:text-3xl font-bold mb-3" style={{ 
+                color: '#fff',
+                textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+              }}>
+                TRADE $BAMBI
+              </h3>
+              <div className="flex flex-wrap items-center gap-4 md:gap-6 mt-4">
+                <a
+                  href="https://trade.padre.gg/trade/solana/FA8DzqyxtWkSJeTSVS6apu9MAX9Np2MrW6pVYan4rkFo?rk=bambi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover-lift inline-flex items-center gap-3 px-6 py-3 bg-white rounded-lg border-2 border-black shadow-lg transition-all duration-200"
+                  style={{ textDecoration: 'none' }}
+                >
                   <img 
-                    src="https://pump.fun/favicon.ico"
-                    alt="Pump.fun"
-                    className="w-6 h-6 md:w-7 md:h-7 object-contain"
-                    onError={(e) => {
-                      e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23000' stroke-width='2'/%3E%3Cpath fill='%23000' d='M8 12h8M12 8v8'/%3E%3C/svg%3E"
-                    }}
+                    src="/IMAGE 2025-12-02 17:03:24.jpg"
+                    alt="Terminal"
+                    className="w-8 h-8 object-contain"
                   />
-                </div>
+                  <span className="font-mono text-base md:text-lg font-bold" style={{ color: '#000' }}>
+                    Trade on Terminal
+                  </span>
+                </a>
                 <a
                   href="https://pump.fun/4kAFtWjyzrpx6E7TFVhcVKKDEsxc8H3uYtg7dTnXpump"
                   target="_blank"
@@ -174,9 +174,12 @@ const HowToBuy = () => {
                   style={{ textDecoration: 'none' }}
                 >
                   <img 
-                    src="/IMAGE 2025-12-02 17:03:24.jpg"
-                    alt="Pump.fun Terminal"
+                    src="https://pump.fun/favicon.ico"
+                    alt="Pump.fun"
                     className="w-8 h-8 object-contain"
+                    onError={(e) => {
+                      e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23000' stroke-width='2'/%3E%3Cpath fill='%23000' d='M8 12h8M12 8v8'/%3E%3C/svg%3E"
+                    }}
                   />
                   <span className="font-mono text-base md:text-lg font-bold" style={{ color: '#000' }}>
                     Trade on Pump.fun
