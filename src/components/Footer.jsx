@@ -69,8 +69,8 @@ const Footer = () => {
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-11 h-11 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-white rounded-lg border-2 border-black"
-                style={{ textDecoration: 'none' }}
+                className={`inline-flex items-center justify-center w-11 h-11 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-lg border-2 border-black ${social.name === 'Terminal' ? '' : 'bg-white'}`}
+                style={{ textDecoration: 'none', background: social.name === 'Terminal' ? 'transparent' : undefined }}
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -85,7 +85,8 @@ const Footer = () => {
                 <img 
                   src={social.icon} 
                   alt={social.name}
-                  className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
+                  className={social.name === 'Terminal' ? 'w-11 h-11 md:w-12 md:h-12 lg:w-14 lg:h-14 object-contain rounded-lg' : 'w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8'}
+                  style={social.name === 'Terminal' ? { background: 'transparent' } : {}}
                   onError={(e) => {
                     if (social.fallback) {
                       e.target.src = social.fallback
