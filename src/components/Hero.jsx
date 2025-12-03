@@ -314,6 +314,7 @@ const Hero = () => {
                   src="https://pump.fun/favicon.ico"
                   alt="Pump.fun"
                   className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
+                  style={{ imageRendering: 'crisp-edges', WebkitImageRendering: 'optimize-contrast' }}
                   onError={(e) => {
                     e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23000' stroke-width='2'/%3E%3Cpath fill='%23000' d='M8 12h8M12 8v8'/%3E%3C/svg%3E"
                   }}

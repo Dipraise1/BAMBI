@@ -32,7 +32,8 @@ const Footer = () => {
       name: "Pump.fun", 
       url: "https://pump.fun/4kAFtWjyzrpx6E7TFVhcVKKDEsxc8H3uYtg7dTnXpump", 
       icon: "https://pump.fun/favicon.ico",
-      fallback: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23000' stroke-width='2'/%3E%3Cpath fill='%23000' d='M8 12h8M12 8v8'/%3E%3C/svg%3E"
+      fallback: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23000' stroke-width='2'/%3E%3Cpath fill='%23000' d='M8 12h8M12 8v8'/%3E%3C/svg%3E",
+      imageRendering: 'crisp-edges'
     },
     { 
       name: "Terminal", 
@@ -41,10 +42,6 @@ const Footer = () => {
       fallback: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23000' stroke-width='2'/%3E%3Cpath fill='%23000' d='M8 12h8M12 8v8'/%3E%3C/svg%3E"
     },
   ]
-
-  // Separate DexScreener from other links
-  const regularLinks = socialLinks.filter(link => link.name !== "DexScreener")
-  const dexScreenerLink = socialLinks.find(link => link.name === "DexScreener")
 
   return (
     <footer className="text-white py-16 px-4 relative overflow-hidden" style={{ background: 'linear-gradient(to bottom, #2ee871, #25d366)', paddingBottom: 'calc(4rem + 28px)', marginBottom: '0' }}>
@@ -63,7 +60,7 @@ const Footer = () => {
             textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
           }}>Support $BAMBI</h4>
           <div className="flex justify-center flex-wrap gap-4 md:gap-6 items-center">
-            {regularLinks.map((social, index) => (
+            {socialLinks.map((social, index) => (
               <motion.a
                 key={index}
                 href={social.url}
@@ -86,7 +83,7 @@ const Footer = () => {
                   src={social.icon} 
                   alt={social.name}
                   className={social.name === 'Terminal' ? 'w-11 h-11 md:w-12 md:h-12 lg:w-14 lg:h-14 object-contain rounded-lg' : 'w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8'}
-                  style={social.name === 'Terminal' ? { background: 'transparent' } : {}}
+                  style={social.name === 'Terminal' ? { background: 'transparent' } : social.name === 'Pump.fun' ? { imageRendering: 'crisp-edges', WebkitImageRendering: 'optimize-contrast' } : {}}
                   onError={(e) => {
                     if (social.fallback) {
                       e.target.src = social.fallback
@@ -95,38 +92,6 @@ const Footer = () => {
                 />
               </motion.a>
             ))}
-            
-            {/* DexScreener in a box */}
-            {dexScreenerLink && (
-              <motion.a
-                href={dexScreenerLink.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-11 h-11 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-white rounded-lg border-2 border-black"
-                style={{ textDecoration: 'none' }}
-                initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: regularLinks.length * 0.1 }}
-                whileHover={{ 
-                  scale: 1.15, 
-                  y: -4,
-                  transition: { duration: 0.2, ease: "easeOut" }
-                }}
-                whileTap={{ scale: 0.95 }}
-                aria-label={dexScreenerLink.name}
-              >
-                <img 
-                  src={dexScreenerLink.icon} 
-                  alt={dexScreenerLink.name}
-                  className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
-                  onError={(e) => {
-                    if (dexScreenerLink.fallback) {
-                      e.target.src = dexScreenerLink.fallback
-                    }
-                  }}
-                />
-              </motion.a>
-            )}
           </div>
         </div>
       </div>
