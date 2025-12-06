@@ -89,7 +89,7 @@ const Hero = () => {
                 display: 'inline-block'
               }}
             >
-              Breed: Husky / Red Heeler / Shepard
+              Breed: Husky / Red Heeler / Shepherd
             </p>
           </div>
 
@@ -97,6 +97,7 @@ const Hero = () => {
           <div className="flex-1 animate-fadeInRight w-full text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
               <span className="text-3xl md:text-4xl lg:text-5xl">🎄</span>
+              <span className="text-3xl md:text-4xl lg:text-5xl">🎁</span>
               <h1 
                 className="font-scrappy font-bold-mix text-5xl md:text-6xl lg:text-7xl"
                 style={{ 
@@ -109,7 +110,8 @@ const Hero = () => {
               >
                 BAMBI
               </h1>
-              <span className="text-3xl md:text-4xl lg:text-5xl">🎁</span>
+              <span className="text-3xl md:text-4xl lg:text-5xl">🦌</span>
+              <span className="text-3xl md:text-4xl lg:text-5xl">🦮</span>
             </div>
             
             <p 
@@ -311,9 +313,9 @@ const Hero = () => {
                 title="Pump.fun"
               >
                 <img 
-                  src="https://pump.fun/favicon.ico"
+                  src="/IMAGE 2025-12-06 21:04:02.jpg"
                   alt="Pump.fun"
-                  className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
+                  className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 object-contain"
                   style={{ imageRendering: 'crisp-edges', WebkitImageRendering: 'optimize-contrast' }}
                   onError={(e) => {
                     e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23000' stroke-width='2'/%3E%3Cpath fill='%23000' d='M8 12h8M12 8v8'/%3E%3C/svg%3E"
@@ -334,6 +336,23 @@ const Hero = () => {
                   className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 object-contain rounded-lg"
                   style={{ background: 'transparent' }}
                 />
+              </a>
+              <a
+                href="https://www.tiktok.com/@pumpbambi.dog"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover-lift inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-white rounded-lg border-2 border-black transition-transform duration-200"
+                style={{ textDecoration: 'none' }}
+                title="TikTok"
+              >
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  viewBox="0 0 24 24" 
+                  fill="#000" 
+                  className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
+                >
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                </svg>
               </a>
             </div>
           </div>

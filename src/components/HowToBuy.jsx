@@ -134,7 +134,7 @@ const HowToBuy = () => {
           >
             <div className="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 bg-white rounded-full flex items-center justify-center border-2 border-black shadow-lg">
               <img 
-                src="https://pump.fun/favicon.ico"
+                src="/IMAGE 2025-12-06 21:04:02.jpg"
                 alt="Pump.fun"
                 className="w-12 h-12 md:w-14 md:h-14 object-contain"
                 style={{ imageRendering: 'crisp-edges', WebkitImageRendering: 'optimize-contrast' }}
@@ -175,13 +175,10 @@ const HowToBuy = () => {
                   style={{ textDecoration: 'none' }}
                 >
                   <img 
-                    src="https://pump.fun/favicon.ico"
+                    src="/IMAGE 2025-12-06 21:04:02.jpg"
                     alt="Pump.fun"
                     className="w-8 h-8 object-contain"
                     style={{ imageRendering: 'crisp-edges', WebkitImageRendering: 'optimize-contrast' }}
-                    onError={(e) => {
-                      e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23000' stroke-width='2'/%3E%3Cpath fill='%23000' d='M8 12h8M12 8v8'/%3E%3C/svg%3E"
-                    }}
                     onError={(e) => {
                       e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23000' stroke-width='2'/%3E%3Cpath fill='%23000' d='M8 12h8M12 8v8'/%3E%3C/svg%3E"
                     }}

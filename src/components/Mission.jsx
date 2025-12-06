@@ -39,7 +39,7 @@ const Mission = () => {
               color: '#000',
               fontWeight: 'bold'
             }}>
-              The ultimate goal of this project is to achieve a level of success that allows us to give back in a meaningful, life-changing way. As the project grows, we plan to use creator fees, proceeds, and community donations to help rescue shelter dogs—especially those facing euthanasia due to overcrowding or lack of resources.
+              The ultimate goal of this project is to achieve a level of success that allows us to give back in a meaningful, life-changing way. As the project grows, we plan to use creator fees, proceeds, and community donations to help rescue shelter dogs.
             </p>
 
             <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ 
