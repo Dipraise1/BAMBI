@@ -114,13 +114,7 @@ const HowToBuy = () => {
                 color: '#000',
                 fontWeight: 'bold'
               }}>
-                Exchange your SOL for $BAMBI and show your support!
-              </p>
-              <p className="text-base md:text-lg leading-relaxed mt-4" style={{ 
-                color: '#000',
-                fontWeight: 'bold'
-              }}>
-                16% of Token Supply Locked for 1 Year!
+                Exchange your SOL for $BAMBI and show your support! 17% of Token Supply Locked for 1 Year!
               </p>
             </div>
           </motion.div>

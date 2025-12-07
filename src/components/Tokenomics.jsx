@@ -61,7 +61,7 @@ const Tokenomics = () => {
                   marginBottom: '16px',
                   fontWeight: 'bold'
                 }}>
-                  <span style={{ fontWeight: 'bold', color: '#2ee871' }}>16%</span> of Token Supply Locked for <span style={{ fontWeight: 'bold', color: '#2ee871' }}>1 Year</span>!
+                  <span style={{ fontWeight: 'bold', color: '#2ee871' }}>17%</span> of Token Supply Locked for <span style={{ fontWeight: 'bold', color: '#2ee871' }}>1 Year</span>!
                 </div>
                 <div style={{ 
                   fontSize: 'clamp(14px, 2vw, 18px)', 
@@ -153,7 +153,7 @@ const Tokenomics = () => {
                   marginBottom: '16px',
                   fontWeight: 'bold'
                 }}>
-                  <span style={{ fontWeight: 'bold', color: '#2ee871' }}>~2%</span> of Token Supply Burned!
+                  <span style={{ fontWeight: 'bold', color: '#2ee871' }}>3.35%</span> of Token Supply Burned!
                 </div>
                 <div style={{ 
                   fontSize: 'clamp(14px, 2vw, 18px)', 
@@ -163,7 +163,7 @@ const Tokenomics = () => {
                   <div style={{ marginBottom: '12px', fontWeight: 'bold' }}>Burn Contracts:</div>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'center' }}>
                     <a 
-                      href="#"
+                      href="https://solscan.io/tx/31YsFeowNKyS8UP13fgPvEaK2WTu2oxu5EP8suM2EHHPvGex5iPPra6s27HKj9A55FHKjarpSg283kJ5jn5Jda9e"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{ 
@@ -174,10 +174,10 @@ const Tokenomics = () => {
                         fontWeight: 'bold'
                       }}
                     >
-                      Burn Contract 1
+                      Burn 1
                     </a>
                     <a 
-                      href="#"
+                      href="https://solscan.io/tx/52zMTcT7HHb7EhWzpatGje4qLj1UiN6NHTC53raesRiZkiPrdjJGxowJEA4VCGyiV6xigrwhw19j1wVmWmZqcinM"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{ 
@@ -188,7 +188,21 @@ const Tokenomics = () => {
                         fontWeight: 'bold'
                       }}
                     >
-                      Burn Contract 2
+                      Burn 2
+                    </a>
+                    <a 
+                      href="https://solscan.io/tx/5XSgEwPep2i26avfMEaZvnV9MwKDrSp4YQM5dpsosgLTkz5KyQo3qhYGkebcF3dzExahojECGSMfsixye2mWahFB"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ 
+                        color: '#2ee871', 
+                        textDecoration: 'underline',
+                        fontSize: 'clamp(12px, 2vw, 16px)',
+                        wordBreak: 'break-all',
+                        fontWeight: 'bold'
+                      }}
+                    >
+                      Burn 3
                     </a>
                   </div>
                 </div>
