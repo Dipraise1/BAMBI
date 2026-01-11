@@ -67,13 +67,16 @@ const Hero = () => {
     <section className="relative overflow-x-hidden flex items-center justify-center" style={{ minHeight: '65vh', paddingTop: '96px', paddingBottom: '24px', background: '#2ee871' }}>
       <div className="max-w-[1200px] mx-auto px-4 w-full" style={{ paddingLeft: '1rem', paddingRight: '1rem' }}>
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-12">
-          {/* Left - Image, centered */}
+          {/* Left - Video, centered */}
           <div className="relative w-full md:w-auto animate-fadeInLeft">
-            <div className="w-full max-w-[500px] md:max-w-[600px] lg:max-w-[650px] mx-auto md:mx-0" style={{ borderRadius: '8px', overflow: 'hidden', border: '2px solid #000' }}>
-              <img
-                src="/IMAGE 2025-11-29 11:05:00.jpg"
-                alt="Bambi"
+            <div className="w-full max-w-[500px] md:max-w-[600px] lg:max-w-[650px] mx-auto md:mx-0" style={{ borderRadius: '8px', overflow: 'hidden' }}>
+              <video
+                src="/BEFORE_AFTER.mp4"
                 className="w-full h-full object-contain"
+                autoPlay
+                loop
+                muted
+                playsInline
                 style={{ display: 'block' }}
               />
             </div>
@@ -96,8 +99,12 @@ const Hero = () => {
           {/* Right - Text, centered */}
           <div className="flex-1 animate-fadeInRight w-full text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
-              <span className="text-3xl md:text-4xl lg:text-5xl">🎄</span>
-              <span className="text-3xl md:text-4xl lg:text-5xl">🎁</span>
+              <img
+                src="/IMAGE_2025-12-17_11_26_59-removebg-preview.png"
+                alt="Bambi Logo"
+                className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
+                style={{ objectFit: 'contain' }}
+              />
               <h1 
                 className="font-scrappy font-bold-mix text-5xl md:text-6xl lg:text-7xl"
                 style={{ 
@@ -110,10 +117,27 @@ const Hero = () => {
               >
                 BAMBI
               </h1>
-              <span className="text-3xl md:text-4xl lg:text-5xl">🦌</span>
-              <span className="text-3xl md:text-4xl lg:text-5xl">🦮</span>
+              <img
+                src="/IMAGE_2025-12-17_11_26_59-removebg-preview.png"
+                alt="Bambi Logo"
+                className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
+                style={{ objectFit: 'contain' }}
+              />
             </div>
             
+            <p 
+              className="font-mono text-lg md:text-xl lg:text-2xl animate-fadeInUp"
+              style={{ 
+                lineHeight: '1.4', 
+                marginBottom: '22px',
+                color: '#000',
+                fontWeight: 'bold',
+                animationDelay: '0.2s',
+                animationFillMode: 'both'
+              }}
+            >
+              Born A Memecoin to Break the Internet
+            </p>
 
             <div className="flex flex-col sm:flex-row gap-3 mb-5 animate-fadeInUp" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
               <a
@@ -275,7 +299,7 @@ const Hero = () => {
                 />
               </a>
               <a
-                href="https://www.dextools.io/app/en/solana/pair-explorer/4kAFtWjyzrpx6E7TFVhcVKKDEsxc8H3uYtg7dTnXpump"
+                href="https://www.dextools.io/app/solana/pair-explorer/21bSTdCVZPorkMkrxXmUQZYrGttwmzycipYEg13HmvVH"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover-lift inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-white rounded-lg border-2 border-black transition-transform duration-200"
@@ -292,23 +316,6 @@ const Hero = () => {
                 />
               </a>
               <a
-                href="https://www.tiktok.com/@pumpbambi.dog"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover-lift inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-white rounded-lg border-2 border-black transition-transform duration-200"
-                style={{ textDecoration: 'none' }}
-                title="TikTok"
-              >
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  viewBox="0 0 24 24" 
-                  fill="#000" 
-                  className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
-                >
-                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
-                </svg>
-              </a>
-              <a
                 href="https://pump.fun/4kAFtWjyzrpx6E7TFVhcVKKDEsxc8H3uYtg7dTnXpump"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -317,10 +324,9 @@ const Hero = () => {
                 title="Pump.fun"
               >
                 <img 
-                  src="/IMAGE 2025-12-06 21:04:02.jpg"
+                  src="https://pump.fun/favicon.ico"
                   alt="Pump.fun"
-                  className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 object-contain"
-                  style={{ imageRendering: 'crisp-edges', WebkitImageRendering: 'optimize-contrast' }}
+                  className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
                   onError={(e) => {
                     e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23000' stroke-width='2'/%3E%3Cpath fill='%23000' d='M8 12h8M12 8v8'/%3E%3C/svg%3E"
                   }}

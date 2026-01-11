@@ -114,7 +114,7 @@ const HowToBuy = () => {
                 color: '#000',
                 fontWeight: 'bold'
               }}>
-                Exchange your SOL for $BAMBI and show your support! 17% of Token Supply Locked for 1 Year!
+                Exchange your SOL for $BAMBI and show your support! 20% of Token Supply Locked for 1 Year!
               </p>
             </div>
           </motion.div>

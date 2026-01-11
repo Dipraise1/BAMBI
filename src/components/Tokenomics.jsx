@@ -61,7 +61,7 @@ const Tokenomics = () => {
                   marginBottom: '16px',
                   fontWeight: 'bold'
                 }}>
-                  <span style={{ fontWeight: 'bold', color: '#2ee871' }}>17%</span> of Token Supply Locked for <span style={{ fontWeight: 'bold', color: '#2ee871' }}>1 Year</span>!
+                  <span style={{ fontWeight: 'bold', color: '#2ee871' }}>20%</span> of Token Supply Locked for <span style={{ fontWeight: 'bold', color: '#2ee871' }}>1 Year</span>!
                 </div>
                 <div style={{ 
                   fontSize: 'clamp(14px, 2vw, 18px)', 
@@ -127,7 +127,7 @@ const Tokenomics = () => {
                       Contract 4
                     </a>
                     <a 
-                      href="https://app.streamflow.finance/contract/solana/mainnet/Contract5"
+                      href="https://app.streamflow.finance/contract/solana/mainnet/EZEekdBWWKPvAsKueYe7zSaTNgtMSpXEDtmthHe81dza"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{ 
@@ -153,7 +153,7 @@ const Tokenomics = () => {
                   marginBottom: '16px',
                   fontWeight: 'bold'
                 }}>
-                  <span style={{ fontWeight: 'bold', color: '#2ee871' }}>3.35%</span> of Token Supply Burned!
+                  <span style={{ fontWeight: 'bold', color: '#2ee871' }}>15%</span> of Token Supply Burned!
                 </div>
                 <div style={{ 
                   fontSize: 'clamp(14px, 2vw, 18px)', 
@@ -204,6 +204,34 @@ const Tokenomics = () => {
                     >
                       Burn 3
                     </a>
+                    <a 
+                      href="https://solscan.io/tx/5S2Er5W1N3NVv9wvDYdXze1gDMv2JsLqd8R7kAHpV2PVknZmcSxvkWJaLCMAwhKBUdRQHcaGZCQpw11vbbvXaNo6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ 
+                        color: '#2ee871', 
+                        textDecoration: 'underline',
+                        fontSize: 'clamp(12px, 2vw, 16px)',
+                        wordBreak: 'break-all',
+                        fontWeight: 'bold'
+                      }}
+                    >
+                      Burn 4
+                    </a>
+                    <a 
+                      href="https://solscan.io/tx/3EPnPQcwSSw6sMw7gX2u2i7WeKvDmpTsa6mxATYy7wWKnbJ33zvcDHdLCsnH9TS4HXYPtnKvT1iihw91jdvxTmYv"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ 
+                        color: '#2ee871', 
+                        textDecoration: 'underline',
+                        fontSize: 'clamp(12px, 2vw, 16px)',
+                        wordBreak: 'break-all',
+                        fontWeight: 'bold'
+                      }}
+                    >
+                      Burn 5
+                    </a>
                   </div>
                 </div>
               </div>
@@ -220,7 +248,7 @@ const Tokenomics = () => {
               width: '100%'
             }}>
               <video
-                src="/BambiMeme.gif.mp4"
+                src="/BAMBI_67X.mp4"
                 className="w-full h-auto"
                 autoPlay
                 loop

@@ -12,6 +12,7 @@ import FloatingElements from './components/FloatingElements'
 import PawTrail from './components/PawTrail'
 import BorderBambi from './components/BorderBambi'
 import SectionDivider from './components/SectionDivider'
+import CustomCursor from './components/CustomCursor'
 
 function App() {
   useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <div className="min-h-screen overflow-x-hidden" style={{ background: '#2ee871', width: '100%', maxWidth: '100vw' }}>
+      <CustomCursor />
       <BorderBambi />
       <PawTrail />
       <FloatingElements />
